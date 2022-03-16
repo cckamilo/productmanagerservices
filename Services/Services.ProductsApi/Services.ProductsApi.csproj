@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Storage.Blobs" Version="12.10.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.10" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Business\Business.ServiceProducts\Business.ServiceProducts.csproj" />
+    <ProjectReference Include="..\..\Repository\DataAccess.Azure\DataAccess.Azure.csproj" />
+    <ProjectReference Include="..\..\Repository\DataAccess.MongoDB\DataAccess.MongoDB.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Repository\DataAccess.MongoDB\DataAccess.MongoDB.csproj" />
+    <ProjectReference Include="..\..\Repository\DataAccess.Azure\DataAccess.Azure.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+</Project>
