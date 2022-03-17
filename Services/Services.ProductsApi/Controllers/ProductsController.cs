@@ -33,7 +33,11 @@ namespace Services.ProductsApi.Controllers
             var response = await productsLogic.GetProducts();
             return Ok(response);
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(string id)
         {
@@ -47,7 +51,12 @@ namespace Services.ProductsApi.Controllers
                 return BadRequest();
             }
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="files"></param>
+        /// <param name="products"></param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<IActionResult> Post(List<IFormFile> files, [FromForm] Products products)
         {
