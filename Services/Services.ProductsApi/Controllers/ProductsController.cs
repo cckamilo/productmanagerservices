@@ -23,7 +23,10 @@ namespace Services.ProductsApi.Controllers
         {
             this.productsLogic = _productsLogic;
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public async Task<IActionResult> Get()
         {
