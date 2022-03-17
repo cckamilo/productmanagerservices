@@ -73,7 +73,7 @@ namespace Services.ProductsApi.Controllers
                 }
 
             }
-            catch (Exception e)
+            catch
             {
                 return BadRequest();
             }
