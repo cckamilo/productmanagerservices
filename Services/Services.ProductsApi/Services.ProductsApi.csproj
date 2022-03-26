@@ -9,6 +9,7 @@
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.10" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -17,4 +18,7 @@
     <ProjectReference Include="..\..\Repository\DataAccess.MongoDB\DataAccess.MongoDB.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="AutoMapper" />
+  </ItemGroup>
 </Project>

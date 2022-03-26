@@ -7,8 +7,8 @@ namespace DataAccess.Azure.Interfaces
     public interface IBlobService
     {
 
-        Task<List<string>> UploadFileBlobAsync(List<IFormFile> files);
+        Task<List<string>> UploadFileBlobAsync(List<IFormFile> files, string container);
 
-        Task<bool> DeleteBlobAsync(string blobName);
+        Task<bool> DeleteBlobAsync(string blobName, string container);
     }
 }

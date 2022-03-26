@@ -3,8 +3,19 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Repository\DataAccess.MongoDB\DataAccess.MongoDB.csproj" />
     <ProjectReference Include="..\..\Repository\DataAccess.Azure\DataAccess.Azure.csproj" />
+    <ProjectReference Include="..\..\Models.ProductsApi\Models.ProductsApi.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Mapping\" />
+    <None Remove="AutoMapper" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AutoMapper\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
+  </ItemGroup>
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>

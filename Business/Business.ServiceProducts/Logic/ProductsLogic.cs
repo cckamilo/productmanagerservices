@@ -1,98 +1,134 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Business.ServiceProducts.Interfaces;
 using DataAccess.Azure.Interfaces;
 using DataAccess.MongoDB.Interfaces.Repository;
 using DataAccess.MongoDB.Models;
 using Microsoft.AspNetCore.Http;
+using Models.ProductsApi.Models;
+using Models.ProductsApi.ResponseModel;
 
 namespace Business.ServiceProducts.Logic
 {
     public class ProductsLogic : IProductsLogic
     {
+        private readonly IMapper iMapper;
         private readonly IBlobService iBlobService;
+     
         private readonly IProductsRepository iRepository;
-        public ProductsLogic(IBlobService _iBlobService, IProductsRepository _iRepository)
+        public ProductsLogic(IBlobService _iBlobService, IProductsRepository _iRepository, IMapper _iMapper)
         {
             this.iBlobService = _iBlobService;
             this.iRepository = _iRepository;
+            this.iMapper = _iMapper;
         }
 
-        public async Task<bool> DeleteById(string id)
+        public async Task<ServiceResponse> DeleteById(string id, string container)
         {
-            var blob = await iRepository.GetByIdAsync(id);
-            if (blob != null)
+            var response = new ServiceResponse();
+            try
             {
-                foreach (var item in blob.images)
+                var isExist = await iRepository.GetByIdAsync(id);
+                if (isExist != null)
                 {
-                    await iBlobService.DeleteBlobAsync(item.name);
+                    foreach (var item in isExist.images)
+                    {
+                        await iBlobService.DeleteBlobAsync(item.name, container);
+                    }
+                    var result = await iRepository.DeleteByIdAsync(id);
+                    response.result = result;
                 }
-                return await iRepository.DeleteByIdAsync(id);
+                else
+                {
+                    response.error = "No existen registros";
+                }
             }
-            else
+            catch (Exception ex)
             {
-                return false;
+                response.error = ex.Message;
+                return response;
             }
+            return response;
         }
 
-        public async Task<Products> GetById(string id)
+        public async Task<ServiceResponse> GetById(string id)
         {
+            var response = new ServiceResponse();
             var result = await iRepository.GetByIdAsync(id);
-            return result;
+            response.result = result;
+            return response;
         }
 
-        public async Task<IList<Products>> GetProducts()
+        public async Task<ServiceResponse> GetProducts()
         {
-            var result = await iRepository.GetAllAsync();            
-            return result;
+            var response = new ServiceResponse();
+            var result = await iRepository.GetAllAsync();
+            response.result = result;
+            return response;
         }
 
-        public async Task<bool> Update(Products products, List<IFormFile> files)
+        public async Task<ServiceResponse> Update(ProductsModel productsModel, List<IFormFile> files, string container)
         {
-           int i = 0;
+            var response = new ServiceResponse();
+            int i = 0;
             var newfile = new Products();
             if (files.Count > 0)
             {
-                var blobs = await iBlobService.UploadFileBlobAsync(files);
+                var blobs = await iBlobService.UploadFileBlobAsync(files, container);
                 blobs.ForEach(element =>
                 {
-                    products.images.Add(new File
+                    productsModel.images.Add(new FileModel
                     {
                         url = element,
                         name = files[i].FileName
                     });
                     i++;
                 });
-
             }
-           
-             return await iRepository.UpdateAsync(products);
+            Products products = iMapper.Map<Products>(productsModel);
+            var result = await iRepository.UpdateAsync(products);
+            response.result = result;
+            return response;
         }
 
-        public async Task<Products> UploadFilesAsync(List<IFormFile> files, Products products)
+        public async Task<ServiceResponse> UploadFilesAsync(List<IFormFile> files, ProductsModel productsModel, string container)
         {
-           int i = 0;
-            
-            var blobs = await iBlobService.UploadFileBlobAsync(files);
-            if (blobs != null)
-            {
-                blobs.ForEach( element =>
+            var response = new ServiceResponse();
+            try
+            {      
+                int i = 0;
+                var blobs = await iBlobService.UploadFileBlobAsync(files, container);
+                if (blobs.Any())
                 {
-                    products.images.Add(new File
+                    blobs.ForEach(element =>
                     {
-                        url = element,
-                        name = files[i].FileName
+                        productsModel.images.Add(new FileModel
+                        {
+                            url = element,
+                            name = files[i].FileName
+                        });
+                        i++;
                     });
-                    i++;
-                });
-                products.date = DateTime.Now.ToString();                
-                return await iRepository.InsertAsync(products);
+                    productsModel.date = DateTime.Now.ToString();
+                    Products products = iMapper.Map<Products>(productsModel);
+                    var result = await iRepository.InsertAsync(products);
+                    response.result = result.id; 
+                }
+                else
+                {
+                    response.error = "El archivo ya existe. Por favor validar";       
+                }
             }
-            else
+            catch (Exception ex)
             {
-                return null;
+                response.error = ex.Message;
+                return response;
             }
+            return response;
+          
         }
     }
 }

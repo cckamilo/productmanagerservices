@@ -2,7 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Azure.Storage.Blobs;
+using Business.ServiceProducts.AutoMapper;
 using Business.ServiceProducts.Interfaces;
 using Business.ServiceProducts.Logic;
 using DataAccess.Azure.Interfaces;
@@ -58,6 +60,15 @@ namespace Services.ProductsApi
             //Azure
             services.AddSingleton(x =>
             new BlobServiceClient(connectionString:Configuration.GetValue<string>(key: "AzureBlobStorageConnectionsString")));
+
+            //AutoMapper
+            var mapperConfig = new MapperConfiguration(m =>
+            {
+                m.AddProfile(new MappingProfile());
+            });
+            IMapper iMapper = mapperConfig.CreateMapper();
+            services.AddSingleton(iMapper);
+            services.AddMvc();
 
 
         }
