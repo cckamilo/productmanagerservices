@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Models.ProductsApi</id>
+    <version>1.0.0</version>
+    <authors>Models.ProductsApi</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net5.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="/Users/christianguzman/Git/ProductManagerServices/Models/Models.ProductsApi/bin/Debug/net5.0/Models.ProductsApi.dll" target="lib/net5.0/Models.ProductsApi.dll" />
+  </files>
+</package>
