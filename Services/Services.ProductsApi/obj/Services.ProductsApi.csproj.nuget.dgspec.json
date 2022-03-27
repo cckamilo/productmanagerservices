@@ -1,0 +1,338 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/Services.ProductsApi.csproj": {}
+  },
+  "projects": {
+    "/Users/christianguzman/Git/ProductManagerServices/Business/Business.ServiceProducts/Business.ServiceProducts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/christianguzman/Git/ProductManagerServices/Business/Business.ServiceProducts/Business.ServiceProducts.csproj",
+        "projectName": "Business.ServiceProducts",
+        "projectPath": "/Users/christianguzman/Git/ProductManagerServices/Business/Business.ServiceProducts/Business.ServiceProducts.csproj",
+        "packagesPath": "/Users/christianguzman/.nuget/packages/",
+        "outputPath": "/Users/christianguzman/Git/ProductManagerServices/Business/Business.ServiceProducts/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/christianguzman/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/Users/christianguzman/Git/ProductManagerServices/Models/Models.ProductsApi/Models.ProductsApi.csproj": {
+                "projectPath": "/Users/christianguzman/Git/ProductManagerServices/Models/Models.ProductsApi/Models.ProductsApi.csproj"
+              },
+              "/Users/christianguzman/Git/ProductManagerServices/Repository/DataAccess.Azure/DataAccess.Azure.csproj": {
+                "projectPath": "/Users/christianguzman/Git/ProductManagerServices/Repository/DataAccess.Azure/DataAccess.Azure.csproj"
+              },
+              "/Users/christianguzman/Git/ProductManagerServices/Repository/DataAccess.MongoDB/DataAccess.MongoDB.csproj": {
+                "projectPath": "/Users/christianguzman/Git/ProductManagerServices/Repository/DataAccess.MongoDB/DataAccess.MongoDB.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.406/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/christianguzman/Git/ProductManagerServices/Models/Models.ProductsApi/Models.ProductsApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/christianguzman/Git/ProductManagerServices/Models/Models.ProductsApi/Models.ProductsApi.csproj",
+        "projectName": "Models.ProductsApi",
+        "projectPath": "/Users/christianguzman/Git/ProductManagerServices/Models/Models.ProductsApi/Models.ProductsApi.csproj",
+        "packagesPath": "/Users/christianguzman/.nuget/packages/",
+        "outputPath": "/Users/christianguzman/Git/ProductManagerServices/Models/Models.ProductsApi/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/christianguzman/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.406/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/christianguzman/Git/ProductManagerServices/Repository/DataAccess.Azure/DataAccess.Azure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/christianguzman/Git/ProductManagerServices/Repository/DataAccess.Azure/DataAccess.Azure.csproj",
+        "projectName": "DataAccess.Azure",
+        "projectPath": "/Users/christianguzman/Git/ProductManagerServices/Repository/DataAccess.Azure/DataAccess.Azure.csproj",
+        "packagesPath": "/Users/christianguzman/.nuget/packages/",
+        "outputPath": "/Users/christianguzman/Git/ProductManagerServices/Repository/DataAccess.Azure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/christianguzman/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Azure.Storage.Blobs": {
+              "target": "Package",
+              "version": "[12.10.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.15, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.406/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/christianguzman/Git/ProductManagerServices/Repository/DataAccess.MongoDB/DataAccess.MongoDB.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/christianguzman/Git/ProductManagerServices/Repository/DataAccess.MongoDB/DataAccess.MongoDB.csproj",
+        "projectName": "DataAccess.MongoDB",
+        "projectPath": "/Users/christianguzman/Git/ProductManagerServices/Repository/DataAccess.MongoDB/DataAccess.MongoDB.csproj",
+        "packagesPath": "/Users/christianguzman/.nuget/packages/",
+        "outputPath": "/Users/christianguzman/Git/ProductManagerServices/Repository/DataAccess.MongoDB/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/christianguzman/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.14.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.406/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/Services.ProductsApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/Services.ProductsApi.csproj",
+        "projectName": "Services.ProductsApi",
+        "projectPath": "/Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/Services.ProductsApi.csproj",
+        "packagesPath": "/Users/christianguzman/.nuget/packages/",
+        "outputPath": "/Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/christianguzman/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/Users/christianguzman/Git/ProductManagerServices/Business/Business.ServiceProducts/Business.ServiceProducts.csproj": {
+                "projectPath": "/Users/christianguzman/Git/ProductManagerServices/Business/Business.ServiceProducts/Business.ServiceProducts.csproj"
+              },
+              "/Users/christianguzman/Git/ProductManagerServices/Models/Models.ProductsApi/Models.ProductsApi.csproj": {
+                "projectPath": "/Users/christianguzman/Git/ProductManagerServices/Models/Models.ProductsApi/Models.ProductsApi.csproj"
+              },
+              "/Users/christianguzman/Git/ProductManagerServices/Repository/DataAccess.Azure/DataAccess.Azure.csproj": {
+                "projectPath": "/Users/christianguzman/Git/ProductManagerServices/Repository/DataAccess.Azure/DataAccess.Azure.csproj"
+              },
+              "/Users/christianguzman/Git/ProductManagerServices/Repository/DataAccess.MongoDB/DataAccess.MongoDB.csproj": {
+                "projectPath": "/Users/christianguzman/Git/ProductManagerServices/Repository/DataAccess.MongoDB/DataAccess.MongoDB.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.1, )"
+            },
+            "Azure.Storage.Blobs": {
+              "target": "Package",
+              "version": "[12.10.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.406/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
