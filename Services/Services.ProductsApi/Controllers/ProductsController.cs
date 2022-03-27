@@ -7,7 +7,7 @@ using DataAccess.MongoDB.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Models.ProductsApi.Models;
-using Models.ProductsApi.ResponseModel;
+using Models.ProductsApi.ResponseModels;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 

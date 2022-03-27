@@ -1,9 +1,8 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using DataAccess.MongoDB.Models;
 using Microsoft.AspNetCore.Http;
 using Models.ProductsApi.Models;
-using Models.ProductsApi.ResponseModel;
+using Models.ProductsApi.ResponseModels;
 
 namespace Business.ServiceProducts.Interfaces
 {

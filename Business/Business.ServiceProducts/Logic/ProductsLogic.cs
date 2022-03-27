@@ -9,16 +9,17 @@ using DataAccess.MongoDB.Interfaces.Repository;
 using DataAccess.MongoDB.Models;
 using Microsoft.AspNetCore.Http;
 using Models.ProductsApi.Models;
-using Models.ProductsApi.ResponseModel;
+using Models.ProductsApi.ResponseModels;
 
 namespace Business.ServiceProducts.Logic
 {
     public class ProductsLogic : IProductsLogic
     {
         private readonly IMapper iMapper;
-        private readonly IBlobService iBlobService;
-     
+        private readonly IBlobService iBlobService; 
         private readonly IProductsRepository iRepository;
+
+
         public ProductsLogic(IBlobService _iBlobService, IProductsRepository _iRepository, IMapper _iMapper)
         {
             this.iBlobService = _iBlobService;

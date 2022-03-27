@@ -16,6 +16,9 @@
     <ProjectReference Include="..\..\Business\Business.ServiceProducts\Business.ServiceProducts.csproj" />
     <ProjectReference Include="..\..\Repository\DataAccess.Azure\DataAccess.Azure.csproj" />
     <ProjectReference Include="..\..\Repository\DataAccess.MongoDB\DataAccess.MongoDB.csproj" />
+    <ProjectReference Include="..\..\Models\Models.ProductsApi\Models.ProductsApi.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
   </ItemGroup>
 
   <ItemGroup>
