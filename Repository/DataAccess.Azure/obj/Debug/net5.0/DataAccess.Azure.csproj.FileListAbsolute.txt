@@ -1,0 +1,12 @@
+/Users/christianguzman/Git/ProductManagerServices/Repository/DataAccess.Azure/bin/Debug/net5.0/DataAccess.Azure.deps.json
+/Users/christianguzman/Git/ProductManagerServices/Repository/DataAccess.Azure/bin/Debug/net5.0/DataAccess.Azure.dll
+/Users/christianguzman/Git/ProductManagerServices/Repository/DataAccess.Azure/bin/Debug/net5.0/ref/DataAccess.Azure.dll
+/Users/christianguzman/Git/ProductManagerServices/Repository/DataAccess.Azure/bin/Debug/net5.0/DataAccess.Azure.pdb
+/Users/christianguzman/Git/ProductManagerServices/Repository/DataAccess.Azure/obj/Debug/net5.0/DataAccess.Azure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/christianguzman/Git/ProductManagerServices/Repository/DataAccess.Azure/obj/Debug/net5.0/DataAccess.Azure.AssemblyInfoInputs.cache
+/Users/christianguzman/Git/ProductManagerServices/Repository/DataAccess.Azure/obj/Debug/net5.0/DataAccess.Azure.AssemblyInfo.cs
+/Users/christianguzman/Git/ProductManagerServices/Repository/DataAccess.Azure/obj/Debug/net5.0/DataAccess.Azure.csproj.CoreCompileInputs.cache
+/Users/christianguzman/Git/ProductManagerServices/Repository/DataAccess.Azure/obj/Debug/net5.0/DataAccess.Azure.dll
+/Users/christianguzman/Git/ProductManagerServices/Repository/DataAccess.Azure/obj/Debug/net5.0/ref/DataAccess.Azure.dll
+/Users/christianguzman/Git/ProductManagerServices/Repository/DataAccess.Azure/obj/Debug/net5.0/DataAccess.Azure.pdb
+/Users/christianguzman/Git/ProductManagerServices/Repository/DataAccess.Azure/obj/Debug/net5.0/DataAccess.Azure.csproj.AssemblyReference.cache

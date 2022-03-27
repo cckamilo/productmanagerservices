@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "dgSpecHash": "kYNt8E3geh8irg74UgcC7J1CiqSJev6HZmkitPNAir4MFSXqQvFffIJ8gnb/85qZb71nqD/hzJD5P/hjuQHGIg==",
+  "success": true,
+  "projectFilePath": "/Users/christianguzman/Git/ProductManagerServices/Repository/DataAccess.Azure/DataAccess.Azure.csproj",
+  "expectedPackageFiles": [
+    "/Users/christianguzman/.nuget/packages/azure.core/1.19.0/azure.core.1.19.0.nupkg.sha512",
+    "/Users/christianguzman/.nuget/packages/azure.storage.blobs/12.10.0/azure.storage.blobs.12.10.0.nupkg.sha512",
+    "/Users/christianguzman/.nuget/packages/azure.storage.common/12.9.0/azure.storage.common.12.9.0.nupkg.sha512",
+    "/Users/christianguzman/.nuget/packages/microsoft.aspnetcore.http.features/5.0.15/microsoft.aspnetcore.http.features.5.0.15.nupkg.sha512",
+    "/Users/christianguzman/.nuget/packages/microsoft.bcl.asyncinterfaces/1.0.0/microsoft.bcl.asyncinterfaces.1.0.0.nupkg.sha512",
+    "/Users/christianguzman/.nuget/packages/microsoft.extensions.primitives/5.0.1/microsoft.extensions.primitives.5.0.1.nupkg.sha512",
+    "/Users/christianguzman/.nuget/packages/system.buffers/4.5.1/system.buffers.4.5.1.nupkg.sha512",
+    "/Users/christianguzman/.nuget/packages/system.diagnostics.diagnosticsource/4.6.0/system.diagnostics.diagnosticsource.4.6.0.nupkg.sha512",
+    "/Users/christianguzman/.nuget/packages/system.io.pipelines/5.0.2/system.io.pipelines.5.0.2.nupkg.sha512",
+    "/Users/christianguzman/.nuget/packages/system.memory/4.5.4/system.memory.4.5.4.nupkg.sha512",
+    "/Users/christianguzman/.nuget/packages/system.memory.data/1.0.2/system.memory.data.1.0.2.nupkg.sha512",
+    "/Users/christianguzman/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/christianguzman/.nuget/packages/system.text.encodings.web/4.7.2/system.text.encodings.web.4.7.2.nupkg.sha512",
+    "/Users/christianguzman/.nuget/packages/system.text.json/4.6.0/system.text.json.4.6.0.nupkg.sha512",
+    "/Users/christianguzman/.nuget/packages/system.threading.tasks.extensions/4.5.2/system.threading.tasks.extensions.4.5.2.nupkg.sha512"
+  ],
+  "logs": []
+}
