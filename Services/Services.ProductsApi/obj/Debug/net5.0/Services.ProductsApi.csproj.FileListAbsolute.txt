@@ -286,6 +286,7 @@
 /Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/bin/Debug/net5.0/refs/System.Xml.XPath.dll
 /Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/bin/Debug/net5.0/refs/System.Xml.XPath.XDocument.dll
 /Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/bin/Debug/net5.0/refs/WindowsBase.dll
+/Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/bin/Debug/net5.0/AutoMapper.dll
 /Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/bin/Debug/net5.0/Azure.Core.dll
 /Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/bin/Debug/net5.0/Azure.Storage.Blobs.dll
 /Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/bin/Debug/net5.0/Azure.Storage.Common.dll
@@ -354,9 +355,11 @@
 /Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/bin/Debug/net5.0/Business.ServiceProducts.dll
 /Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/bin/Debug/net5.0/DataAccess.Azure.dll
 /Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/bin/Debug/net5.0/DataAccess.MongoDB.dll
+/Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/bin/Debug/net5.0/Models.ProductsApi.dll
 /Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/bin/Debug/net5.0/Business.ServiceProducts.pdb
 /Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/bin/Debug/net5.0/DataAccess.Azure.pdb
 /Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/bin/Debug/net5.0/DataAccess.MongoDB.pdb
+/Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/bin/Debug/net5.0/Models.ProductsApi.pdb
 /Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/obj/Debug/net5.0/Services.ProductsApi.csproj.AssemblyReference.cache
 /Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/obj/Debug/net5.0/Services.ProductsApi.GeneratedMSBuildEditorConfig.editorconfig
 /Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/obj/Debug/net5.0/Services.ProductsApi.AssemblyInfoInputs.cache
@@ -373,6 +376,3 @@
 /Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/obj/Debug/net5.0/ref/Services.ProductsApi.dll
 /Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/obj/Debug/net5.0/Services.ProductsApi.pdb
 /Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/obj/Debug/net5.0/Services.ProductsApi.genruntimeconfig.cache
-/Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/bin/Debug/net5.0/AutoMapper.dll
-/Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/bin/Debug/net5.0/Models.ProductsApi.dll
-/Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/bin/Debug/net5.0/Models.ProductsApi.pdb

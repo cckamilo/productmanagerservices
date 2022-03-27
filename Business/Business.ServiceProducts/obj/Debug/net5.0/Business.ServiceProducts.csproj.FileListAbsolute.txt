@@ -4,8 +4,10 @@
 /Users/christianguzman/Git/ProductManagerServices/Business/Business.ServiceProducts/bin/Debug/net5.0/Business.ServiceProducts.pdb
 /Users/christianguzman/Git/ProductManagerServices/Business/Business.ServiceProducts/bin/Debug/net5.0/DataAccess.Azure.dll
 /Users/christianguzman/Git/ProductManagerServices/Business/Business.ServiceProducts/bin/Debug/net5.0/DataAccess.MongoDB.dll
+/Users/christianguzman/Git/ProductManagerServices/Business/Business.ServiceProducts/bin/Debug/net5.0/Models.ProductsApi.dll
 /Users/christianguzman/Git/ProductManagerServices/Business/Business.ServiceProducts/bin/Debug/net5.0/DataAccess.MongoDB.pdb
 /Users/christianguzman/Git/ProductManagerServices/Business/Business.ServiceProducts/bin/Debug/net5.0/DataAccess.Azure.pdb
+/Users/christianguzman/Git/ProductManagerServices/Business/Business.ServiceProducts/bin/Debug/net5.0/Models.ProductsApi.pdb
 /Users/christianguzman/Git/ProductManagerServices/Business/Business.ServiceProducts/obj/Debug/net5.0/Business.ServiceProducts.csproj.AssemblyReference.cache
 /Users/christianguzman/Git/ProductManagerServices/Business/Business.ServiceProducts/obj/Debug/net5.0/Business.ServiceProducts.GeneratedMSBuildEditorConfig.editorconfig
 /Users/christianguzman/Git/ProductManagerServices/Business/Business.ServiceProducts/obj/Debug/net5.0/Business.ServiceProducts.AssemblyInfoInputs.cache
@@ -15,5 +17,3 @@
 /Users/christianguzman/Git/ProductManagerServices/Business/Business.ServiceProducts/obj/Debug/net5.0/Business.ServiceProducts.dll
 /Users/christianguzman/Git/ProductManagerServices/Business/Business.ServiceProducts/obj/Debug/net5.0/ref/Business.ServiceProducts.dll
 /Users/christianguzman/Git/ProductManagerServices/Business/Business.ServiceProducts/obj/Debug/net5.0/Business.ServiceProducts.pdb
-/Users/christianguzman/Git/ProductManagerServices/Business/Business.ServiceProducts/bin/Debug/net5.0/Models.ProductsApi.dll
-/Users/christianguzman/Git/ProductManagerServices/Business/Business.ServiceProducts/bin/Debug/net5.0/Models.ProductsApi.pdb
