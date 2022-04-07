@@ -103,8 +103,6 @@ namespace DataAccess.MongoDB.Repository
 
                 return null;
             }
-
-
         }
 
         public async Task<bool> UpdateAsync(TEntity entity)

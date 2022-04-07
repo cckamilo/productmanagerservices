@@ -22,6 +22,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
+using Models.ProductsApi.ResponseModels;
 
 namespace Services.ProductsApi
 {
@@ -46,18 +47,21 @@ namespace Services.ProductsApi
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Services.ProductsApi", Version = "v1" });
             });
-            
+            //Business
             services.AddTransient<IProductsLogic, ProductsLogic>();
+            services.AddTransient<ICategoriesLogic, CategoriesLogic>();
+            services.AddTransient<ServiceResponse>();
+            //Repository
             services.AddTransient<IProductsRepository, ProductsRepository>();
+            services.AddTransient<ICategoriesRepository, CategoriesRepository>();
             services.AddSingleton<IBlobService, BlobService>();
-            //MongoDb
+            //MongoDb Conexion
             services.Configure<StoreDataBaseSettings>(
                 Configuration.GetSection(nameof(StoreDataBaseSettings)));
 
             services.AddSingleton<IStoreDataBaseSettings>(sp => 
             sp.GetRequiredService<IOptions<StoreDataBaseSettings>>().Value);
-            services.AddControllers().AddNewtonsoftJson();
-            //Azure
+            //Azure Conexion
             services.AddSingleton(x =>
             new BlobServiceClient(connectionString:Configuration.GetValue<string>(key: "AzureBlobStorageConnectionsString")));
 
@@ -69,6 +73,7 @@ namespace Services.ProductsApi
             IMapper iMapper = mapperConfig.CreateMapper();
             services.AddSingleton(iMapper);
             services.AddMvc();
+            services.AddControllers().AddNewtonsoftJson();
 
 
         }

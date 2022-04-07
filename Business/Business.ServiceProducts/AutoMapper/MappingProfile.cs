@@ -12,7 +12,7 @@ namespace Business.ServiceProducts.AutoMapper
             CreateMap<ItemsModel, Items>();
             CreateMap<FileModel, File>();
             CreateMap<ProductsModel, Products>();
-
-    }
+            CreateMap<CategoriesModel, Categories>();
+        }
     }
 }

@@ -9,3 +9,4 @@
 /Users/christianguzman/Git/ProductManagerServices/Models/Models.ProductsApi/obj/Debug/net5.0/Models.ProductsApi.dll
 /Users/christianguzman/Git/ProductManagerServices/Models/Models.ProductsApi/obj/Debug/net5.0/ref/Models.ProductsApi.dll
 /Users/christianguzman/Git/ProductManagerServices/Models/Models.ProductsApi/obj/Debug/net5.0/Models.ProductsApi.pdb
+/Users/christianguzman/Git/ProductManagerServices/Models/Models.ProductsApi/obj/Debug/net5.0/Models.ProductsApi.csproj.AssemblyReference.cache
