@@ -11,16 +11,16 @@ using MongoDB.Driver;
 
 namespace DataAccess.MongoDB.Repository
 {
-    public class MongoDbRepository <TEntity> : IMongoDbRepository<TEntity> where TEntity : class, IEntityBase
+    public class MongoDbRepository<TEntity> : IMongoDbRepository<TEntity> where TEntity : class, IEntityBase
     {
-       private readonly IMongoCollection<TEntity> _collection;
+        private readonly IMongoCollection<TEntity> _collection;
         public MongoDbRepository(IStoreDataBaseSettings settings)
         {
             var mdbClient = new MongoClient(settings.connectionString);
             var database = mdbClient.GetDatabase(settings.dataBaseName);
             _collection = database.GetCollection<TEntity>(typeof(TEntity).Name);
         }
-       
+
         public async Task<bool> DeleteByIdAsync(string id)
         {
             try

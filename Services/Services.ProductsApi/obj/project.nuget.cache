@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "CaCuo/WBtF5eErpQrje4VGmiwX90x0mD1vldBStF4C9nV9T2iJQ5LV2Y2O+hX1pC7lQkWdTL+kGwvEezvTujwQ==",
+  "dgSpecHash": "8gSl3V45QuvdC4DbzGYPdnJwqtiT43AbiZtZsuuxMlwyGaSaJxlrS2YDyo4WLDA9YOcfaHBVqCYYLKNR9o3miQ==",
   "success": true,
   "projectFilePath": "/Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/Services.ProductsApi.csproj",
   "expectedPackageFiles": [

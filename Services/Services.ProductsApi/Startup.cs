@@ -9,8 +9,10 @@ using Business.ServiceProducts.Interfaces;
 using Business.ServiceProducts.Logic;
 using DataAccess.Azure.Interfaces;
 using DataAccess.Azure.Repository;
+using DataAccess.MongoDB.Interfaces;
 using DataAccess.MongoDB.Interfaces.Configuration;
 using DataAccess.MongoDB.Interfaces.Repository;
+using DataAccess.MongoDB.Lookup;
 using DataAccess.MongoDB.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -47,14 +49,16 @@ namespace Services.ProductsApi
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Services.ProductsApi", Version = "v1" });
             });
-            //Business
+            //Bussines
             services.AddTransient<IProductsLogic, ProductsLogic>();
             services.AddTransient<ICategoriesLogic, CategoriesLogic>();
+            services.AddTransient<ISubCategoriesLogic, SubCategoriesLogic>();
             services.AddTransient<ServiceResponse>();
             //Repository
             services.AddTransient<IProductsRepository, ProductsRepository>();
             services.AddTransient<ICategoriesRepository, CategoriesRepository>();
             services.AddSingleton<IBlobService, BlobService>();
+            services.AddSingleton<IProductsLookup, ProductsLookup>();
             //MongoDb Conexion
             services.Configure<StoreDataBaseSettings>(
                 Configuration.GetSection(nameof(StoreDataBaseSettings)));

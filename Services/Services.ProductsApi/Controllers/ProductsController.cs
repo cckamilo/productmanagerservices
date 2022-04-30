@@ -14,7 +14,7 @@ using Models.ProductsApi.ResponseModels;
 namespace Services.ProductsApi.Controllers
 {
     [Produces("application/json")]
-    [Route("api/v2/products")]
+    [Route("api/v2/{controller}")]
     [ApiController]
     public class ProductsController : Controller
     {

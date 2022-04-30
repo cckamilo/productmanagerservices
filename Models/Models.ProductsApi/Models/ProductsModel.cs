@@ -12,8 +12,8 @@ namespace Models.ProductsApi.Models
         }
 
         public string id { get; set; }
-        public string categories { get; set; }
-        public string subCategories { get; set; }
+        public string categoryId { get; set; }
+        public string subCategoryId { get; set; }
         public string title { get; set; }
         public string description { get; set; }
         public List<ItemsModel> sizes { get; set; }

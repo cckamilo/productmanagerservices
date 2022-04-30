@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using Business.ServiceProducts.Interfaces;
 using DataAccess.Azure.Interfaces;
+using DataAccess.MongoDB.Interfaces;
 using DataAccess.MongoDB.Interfaces.Repository;
 using DataAccess.MongoDB.Models;
 using Microsoft.AspNetCore.Http;
@@ -18,13 +19,15 @@ namespace Business.ServiceProducts.Logic
         private readonly IMapper iMapper;
         private readonly IBlobService iBlobService; 
         private readonly IProductsRepository iRepository;
+        private readonly IProductsLookup productsLookup;
 
 
-        public ProductsLogic(IBlobService _iBlobService, IProductsRepository _iRepository, IMapper _iMapper)
+        public ProductsLogic(IBlobService _iBlobService, IProductsRepository _iRepository, IMapper _iMapper, IProductsLookup _productsLookup)
         {
             this.iBlobService = _iBlobService;
             this.iRepository = _iRepository;
             this.iMapper = _iMapper;
+            this.productsLookup = _productsLookup;
         }
 
         public async Task<ServiceResponse> DeleteById(string id, string container)
@@ -66,7 +69,7 @@ namespace Business.ServiceProducts.Logic
         public async Task<ServiceResponse> GetProducts()
         {
             var response = new ServiceResponse();
-            var result = await iRepository.GetAllAsync();
+            var result = await productsLookup.GetProductsAsync();
             response.result = result;
             return response;
         }

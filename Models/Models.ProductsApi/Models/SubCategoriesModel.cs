@@ -1,13 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-
 namespace Models.ProductsApi.Models
 {
-    public class CategoriesModel
+    public class SubCategoriesModel
     {
-        public CategoriesModel()
+        public SubCategoriesModel()
         {
-            //this.subCategories = new List<SubCategoriesModel>();
+
         }
         public string id { get; set; }
 
@@ -18,10 +16,5 @@ namespace Models.ProductsApi.Models
         public DateTime? modificationDate { get; set; }
 
         public bool active { get; set; }
-
-        //public List<SubCategoriesModel> subCategories { get; set; }
-
-
-
     }
 }

@@ -8,4 +8,10 @@
     <PackageReference Include="MongoDB.Driver" Version="2.14.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Lookup\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Lookup\" />
+  </ItemGroup>
 </Project>

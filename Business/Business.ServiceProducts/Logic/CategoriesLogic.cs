@@ -45,7 +45,7 @@ namespace Business.ServiceProducts.Logic
             {
                 response.error = ex.Message;
                 return response;
-            }     
+            }
             return response;
         }
 
@@ -67,9 +67,22 @@ namespace Business.ServiceProducts.Logic
             return response;
         }
 
-        public Task<ServiceResponse> GetByIdAsync(string id)
+        public async Task<ServiceResponse> GetByIdAsync(string id)
         {
-            throw new NotImplementedException();
+            var result = await repository.GetByIdAsync(id);
+            response.result = new List<object>();
+            if (result != null)
+            {
+                response.error = null;
+                response.result = result;
+            }
+            else
+            {
+                response.error = "No hay resgistros";
+                response.result = null;
+            }
+
+            return response;
         }
 
         public async Task<ServiceResponse> InsertAsync(CategoriesModel categoryModel)
@@ -84,7 +97,7 @@ namespace Business.ServiceProducts.Logic
                     model.creationDate = DateTime.Now;
                     var result = await repository.InsertAsync(model);
                     response.error = null;
-                    response.result = result;
+                    response.result = result.id;
                 }
                 else
                 {
@@ -96,16 +109,7 @@ namespace Business.ServiceProducts.Logic
             {
                 response.error = ex.Message;
                 return response;
-            }    
-            //if (categoryModel.subCategories.Count > 0)
-            //{
-            //    categoryModel.subCategories.ForEach(x =>
-            //    {
-            //        x._id = ObjectId.GenerateNewId().ToString();
-            //        x.active = true;
-            //        x.creationDate = DateTime.Now;
-            //    });
-            //}
+            }
             return response;
         }
 
@@ -143,7 +147,7 @@ namespace Business.ServiceProducts.Logic
                 response.error = ex.Message;
                 return response;
             }
-           
+
             return response;
 
         }
