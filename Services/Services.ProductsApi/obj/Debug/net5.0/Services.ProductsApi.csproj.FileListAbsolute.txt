@@ -1,3 +1,9 @@
+/Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/obj/Debug/net5.0/Services.ProductsApi.GeneratedMSBuildEditorConfig.editorconfig
+/Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/obj/Debug/net5.0/Services.ProductsApi.AssemblyInfoInputs.cache
+/Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/obj/Debug/net5.0/Services.ProductsApi.AssemblyInfo.cs
+/Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/obj/Debug/net5.0/Services.ProductsApi.csproj.CoreCompileInputs.cache
+/Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/obj/Debug/net5.0/Services.ProductsApi.MvcApplicationPartsAssemblyInfo.cs
+/Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/obj/Debug/net5.0/Services.ProductsApi.MvcApplicationPartsAssemblyInfo.cache
 /Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/bin/Debug/net5.0/appsettings.Development.json
 /Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/bin/Debug/net5.0/appsettings.json
 /Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/bin/Debug/net5.0/Services.ProductsApi.deps.json
@@ -360,13 +366,6 @@
 /Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/bin/Debug/net5.0/DataAccess.Azure.pdb
 /Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/bin/Debug/net5.0/DataAccess.MongoDB.pdb
 /Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/bin/Debug/net5.0/Models.ProductsApi.pdb
-/Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/obj/Debug/net5.0/Services.ProductsApi.csproj.AssemblyReference.cache
-/Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/obj/Debug/net5.0/Services.ProductsApi.GeneratedMSBuildEditorConfig.editorconfig
-/Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/obj/Debug/net5.0/Services.ProductsApi.AssemblyInfoInputs.cache
-/Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/obj/Debug/net5.0/Services.ProductsApi.AssemblyInfo.cs
-/Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/obj/Debug/net5.0/Services.ProductsApi.csproj.CoreCompileInputs.cache
-/Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/obj/Debug/net5.0/Services.ProductsApi.MvcApplicationPartsAssemblyInfo.cs
-/Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/obj/Debug/net5.0/Services.ProductsApi.MvcApplicationPartsAssemblyInfo.cache
 /Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/obj/Debug/net5.0/staticwebassets/Services.ProductsApi.StaticWebAssets.Manifest.cache
 /Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/obj/Debug/net5.0/staticwebassets/Services.ProductsApi.StaticWebAssets.xml
 /Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/obj/Debug/net5.0/scopedcss/bundle/Services.ProductsApi.styles.css
@@ -376,3 +375,4 @@
 /Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/obj/Debug/net5.0/ref/Services.ProductsApi.dll
 /Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/obj/Debug/net5.0/Services.ProductsApi.pdb
 /Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/obj/Debug/net5.0/Services.ProductsApi.genruntimeconfig.cache
+/Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/obj/Debug/net5.0/Services.ProductsApi.csproj.AssemblyReference.cache

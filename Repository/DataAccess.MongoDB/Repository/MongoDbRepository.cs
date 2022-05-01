@@ -19,7 +19,7 @@ namespace DataAccess.MongoDB.Repository
             var mdbClient = new MongoClient(settings.connectionString);
             var database = mdbClient.GetDatabase(settings.dataBaseName);
             _collection = database.GetCollection<TEntity>(typeof(TEntity).Name);
-        }
+            }
 
         public async Task<bool> DeleteByIdAsync(string id)
         {
@@ -113,7 +113,7 @@ namespace DataAccess.MongoDB.Repository
                 foreach (PropertyInfo prop in entity.GetType().GetProperties())
                 {
                     var value = entity.GetType().GetProperty(prop.Name).GetValue(entity, null);
-                    if (prop.Name != "id")
+                    if (prop.Name != "id" && prop.Name != "creationDate")
                     {
                         if (value != null)
                         {

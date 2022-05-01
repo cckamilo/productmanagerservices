@@ -16,12 +16,9 @@ using DataAccess.MongoDB.Lookup;
 using DataAccess.MongoDB.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 using Models.ProductsApi.ResponseModels;
@@ -57,6 +54,7 @@ namespace Services.ProductsApi
             //Repository
             services.AddTransient<IProductsRepository, ProductsRepository>();
             services.AddTransient<ICategoriesRepository, CategoriesRepository>();
+            services.AddTransient<ISubCategoriesRepository, SubCategoriesRepository>();
             services.AddSingleton<IBlobService, BlobService>();
             services.AddSingleton<IProductsLookup, ProductsLookup>();
             //MongoDb Conexion

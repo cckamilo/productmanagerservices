@@ -9,9 +9,11 @@ namespace Models.ProductsApi.Models
         }
         public string id { get; set; }
 
+        public string categoryId { get; set; }
+
         public string name { get; set; }
 
-        public DateTime creationDate { get; set; }
+        public DateTime? creationDate { get; set; }
 
         public DateTime? modificationDate { get; set; }
 

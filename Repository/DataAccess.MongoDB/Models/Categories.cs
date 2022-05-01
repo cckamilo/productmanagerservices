@@ -21,18 +21,8 @@ namespace DataAccess.MongoDB.Models
 
         public bool active { get; set; }
 
-        //public List<SubCategories> subCategories { get; set; }
-
-
-        //public class Items
-        //{
-        //    public string item { get; set; }
-        //}
-
         public Categories()
         {
-
-            //this.subCategories = new List<SubCategories>();
 
         }
     }

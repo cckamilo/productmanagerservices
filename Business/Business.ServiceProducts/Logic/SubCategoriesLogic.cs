@@ -14,45 +14,42 @@ namespace Business.ServiceProducts.Logic
 {
     public class SubCategoriesLogic : ISubCategoriesLogic
     {
-        private readonly ICategoriesRepository repository;
+
+        private readonly ISubCategoriesRepository subcategoriesRepository;
         private ServiceResponse response;
         private readonly IMapper iMapper;
 
-        public SubCategoriesLogic(ICategoriesRepository _respository, ServiceResponse _response, IMapper _iMapper)
+        public SubCategoriesLogic(ISubCategoriesRepository _subcategoriesRepository, ServiceResponse _response, IMapper _iMapper)
         {
-            this.repository = _respository;
+            this.subcategoriesRepository = _subcategoriesRepository;
             this.response = _response;
             this.iMapper = _iMapper;
         }
 
         public async Task<ServiceResponse> DeleteByIdAsync(string id)
         {
-            //try
-            //{
-            //    var subCategory = await repository.GetByIdAsync(id);
-            //    if (subCategory != null)
-            //    {
+            try
+            {
+                var subcategory = await subcategoriesRepository.GetByIdAsync(id);
+                if (subcategory != null)
+                {
+                    bool result = await subcategoriesRepository.DeleteByIdAsync(id);
+                    response.error = null;
+                    response.result = result;
+                }
+                else
+                {
+                    response.error = "No existe la categoria.";
+                    response.result = null;
+                }
+                return response;
+            }
+            catch (Exception ex)
+            {
+                response.error = ex.Message;
+                return response;
+            }
 
-
-
-            //            bool result = await repository.DeleteByIdAsync(id);
-            //            response.error = null;
-            //            response.result = result;
-
-            //    }
-            //    else
-            //    {
-            //        response.error = "No existe la categoria.";
-            //        response.result = null;
-            //    }
-            //    return response;
-            //}
-            //catch (Exception ex)
-            //{
-            //    response.error = ex.Message;
-            //    return response;
-            //}
-            throw new NotImplementedException();
         }
 
         public Task<ServiceResponse> GetAsync()
@@ -62,50 +59,47 @@ namespace Business.ServiceProducts.Logic
 
         public async Task<ServiceResponse> GetByIdAsync(string id)
         {
-            //var result = await repository.GetByIdAsync(id);
-            //response.result = new List<object>();
-            //if (result != null)
-            //{
-            //    response.error = null;
-            //    response.result = result;
-            //}
-            //else
-            //{
-            //    response.error = "No hay resgistros";
-            //    response.result = null;
-            //}
+            var result = await subcategoriesRepository.GetByIdAsync(id);
+            response.result = new List<object>();
+            if (result != null)
+            {
+                response.error = null;
+                response.result = result;
+            }
+            else
+            {
+                response.error = "No hay resgistros";
+                response.result = null;
+            }
 
-            //return response;
+            return response;
             throw new NotImplementedException();
         }
 
-        public async Task<ServiceResponse> InsertAsync(SubCategoriesModel subCategoryModel, string id)
+        public async Task<ServiceResponse> InsertAsync(SubCategoriesModel model)
         {
-            SubCategories subcategoriesModel = iMapper.Map<SubCategories>(subCategoryModel);
+            SubCategories subcategory = iMapper.Map<SubCategories>(model);
             try
             {
-                //var subCategory = await repository.GetByIdAsync(id);
-                //if (subCategory != null)
-                //{
-                 
-             
-                //        subcategoriesModel.id = ObjectId.GenerateNewId().ToString();
-                //        subcategoriesModel.active = true;
-                //        subcategoriesModel.creationDate = DateTime.Now;
-            
-                //        bool result = await repository.InsertAsync(subCategory);
-                //        response.error = null;
-                //        response.result = result;
-
-
-
-                //}
-                //else
-                //{
-                //    response.error = "No existe la categoria.";
-                //    response.result = null;
-                //}
-                throw new NotImplementedException();
+                var subCategories = subcategoriesRepository.SearchForAsync(x => x.categoryId == model.categoryId);
+                if (subCategories.Any())
+                {
+                    var exist = subCategories.Where(x => x.name == model.name).FirstOrDefault();
+                    if (exist != null)
+                    {
+                        response.error = "La subcategoria " + exist.name + " ya existe";
+                        response.result = null;
+                        return response;
+                    }
+                }
+                subcategory.id = ObjectId.GenerateNewId().ToString();
+                subcategory.name = model.name;
+                subcategory.categoryId = model.categoryId;
+                subcategory.active = true;
+                subcategory.creationDate = DateTime.Now;
+                var result = await subcategoriesRepository.InsertAsync(subcategory);
+                response.error = null;
+                response.result = result.id;
             }
             catch (Exception ex)
             {
@@ -116,43 +110,32 @@ namespace Business.ServiceProducts.Logic
 
         }
 
-        public async Task<ServiceResponse> UpdateAsync(SubCategoriesModel subCategoryModel, string idCategory)
+        public async Task<ServiceResponse> UpdateAsync(SubCategoriesModel model, string id)
         {
-            //try
-            //{
-            //    var category = await repository.GetByIdAsync(idCategory);
-
-            //    if (category != null)
-            //    {
-            //        var subCategory = category.subCategories.Find(x => x.id == subCategoryModel.id);
-            //        if (subCategory != null)
-            //        {
-            //            subCategory.name = subCategoryModel.name;
-            //            subCategory.modificationDate = DateTime.Now;
-            //            subCategory.active = subCategory.active;              
-            //            bool result = await repository.UpdateAsync(category);
-            //            response.error = null;
-            //            response.result = result;
-            //        }
-            //        else
-            //        {
-            //            response.error = "La subcategoria no existe.";
-            //            response.result = null;
-            //        }
-            //    }
-            //    else
-            //    {
-            //        response.error = "No existe la categoria.";
-            //        response.result = null;
-            //    }
-            //    return response;
-            //}
-            //catch (Exception ex)
-            //{
-            //    response.error = ex.Message;
-            //    return response;
-            //}
-            throw new NotImplementedException();
+            SubCategories subcategory = iMapper.Map<SubCategories>(model);
+            try
+            {
+                var data = await subcategoriesRepository.GetByIdAsync(id);
+                if (data != null)
+                {
+                    subcategory.id = id;
+                    subcategory.modificationDate = DateTime.Now;
+                    bool result = await subcategoriesRepository.UpdateAsync(subcategory);
+                    response.error = null;
+                    response.result = result;
+                }
+                else
+                {
+                    response.error = "La subcategoria no existe.";
+                    response.result = null;
+                }
+                return response;
+            }
+            catch (Exception ex)
+            {
+                response.error = ex.Message;
+                return response;
+            }
         }
     }
 }

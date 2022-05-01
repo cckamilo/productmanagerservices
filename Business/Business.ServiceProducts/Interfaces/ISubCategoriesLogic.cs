@@ -13,8 +13,8 @@ namespace Business.ServiceProducts.Interfaces
 
         Task<ServiceResponse> DeleteByIdAsync(string id);
 
-        Task<ServiceResponse> UpdateAsync(SubCategoriesModel SubCategory, string id);
+        Task<ServiceResponse> UpdateAsync(SubCategoriesModel model, string id);
 
-        Task<ServiceResponse> InsertAsync(SubCategoriesModel SubCategory, string id);
+        Task<ServiceResponse> InsertAsync(SubCategoriesModel model);
     }
 }
