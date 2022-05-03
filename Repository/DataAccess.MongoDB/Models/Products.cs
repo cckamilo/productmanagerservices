@@ -16,6 +16,7 @@ namespace DataAccess.MongoDB.Models
         public string id { get; set; }
         [BsonRepresentation(BsonType.ObjectId)]
         public string categoryId { get; set; }
+        [BsonRepresentation(BsonType.ObjectId)]
         public string subCategoryId { get; set; }
         public string title { get; set; }
         public string description { get; set; }
@@ -40,9 +41,18 @@ namespace DataAccess.MongoDB.Models
         public string name { get; set; }
     }
 
-    public class ProductsLookedUp: Products {
-
-        public List<Categories> categories { get; set; }
-
+    public class ProductsLookedUp 
+    {
+        public string id { get; set; }
+        public IEnumerable<Categories> categories { get; set; }
+        public IEnumerable<SubCategories> subcategories { get; set; }
+        public string title { get; set; }
+        public string description { get; set; }
+        public int stock { get; set; }
+        public int price { get; set; }
+        public List<File> images { get; set; }
+        public string date { get; set; }
     }
+
+
 }

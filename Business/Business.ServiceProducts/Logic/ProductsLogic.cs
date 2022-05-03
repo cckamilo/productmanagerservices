@@ -70,7 +70,18 @@ namespace Business.ServiceProducts.Logic
         {
             var response = new ServiceResponse();
             var result = await productsLookup.GetProductsAsync();
-            response.result = result;
+            if (result.Any())
+            {
+                response.error = null;
+                response.result = result;
+            }
+            else
+            {
+                response.error = "No existen registros.";
+                response.result = null;
+            }
+           
+
             return response;
         }
 
@@ -123,7 +134,8 @@ namespace Business.ServiceProducts.Logic
                 }
                 else
                 {
-                    response.error = "El archivo ya existe. Por favor validar";       
+                    response.error = "El archivo ya existe. Por favor validar";
+                    response.result = null;
                 }
             }
             catch (Exception ex)
