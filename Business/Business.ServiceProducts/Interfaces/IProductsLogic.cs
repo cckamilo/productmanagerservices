@@ -8,7 +8,7 @@ namespace Business.ServiceProducts.Interfaces
 {
     public interface IProductsLogic
     {
-        Task<ServiceResponse> GetProducts();
+        Task<object> GetProducts();
         Task<ServiceResponse> GetById(string id);
         Task<ServiceResponse> DeleteById(string id, string container);
         Task<ServiceResponse> Update(ProductsModel productsModel, List<IFormFile> files, string container);

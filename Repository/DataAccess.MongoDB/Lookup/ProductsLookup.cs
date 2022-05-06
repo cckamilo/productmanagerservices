@@ -40,8 +40,9 @@ namespace DataAccess.MongoDB.Lookup
                                 images = p.images,
                                 date = p.date,
                                 categories = joinedCategories,
-                                subcategories = joinedSubcategories
-        
+                                subcategories = joinedSubcategories,
+                                price = p.price,
+                                stock = p.stock
                             };
 
                 return await query.ToListAsync();

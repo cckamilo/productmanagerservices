@@ -66,23 +66,13 @@ namespace Business.ServiceProducts.Logic
             return response;
         }
 
-        public async Task<ServiceResponse> GetProducts()
+        public async Task<object> GetProducts()
         {
-            var response = new ServiceResponse();
+            object list = new object();
             var result = await productsLookup.GetProductsAsync();
-            if (result.Any())
-            {
-                response.error = null;
-                response.result = result;
-            }
-            else
-            {
-                response.error = "No existen registros.";
-                response.result = null;
-            }
-           
+            list = result;
 
-            return response;
+            return list;
         }
 
         public async Task<ServiceResponse> Update(ProductsModel productsModel, List<IFormFile> files, string container)
