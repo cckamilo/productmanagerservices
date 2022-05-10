@@ -58,11 +58,15 @@ namespace Business.ServiceProducts.Logic
             return response;
         }
 
-        public async Task<ServiceResponse> GetById(string id)
+        public async Task<object> GetById(string id)
         {
-            var response = new ServiceResponse();
+            object response = new object();
             var result = await iRepository.GetByIdAsync(id);
-            response.result = result;
+            if (result != null)
+            {
+                response = result;
+            }
+
             return response;
         }
 
