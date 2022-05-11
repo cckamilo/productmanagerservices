@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "0z/iJsnwxa3ZLsDvIYuGCLNbRQ0KVpQo1DE+2Zt/X3RXDonFvpUn5o+0fOLLvL6iNAz0tDpjOf12ktqnQrPIvQ==",
+  "dgSpecHash": "C1Fk94MqEKzPsDFNuxYgKW9P4mF0STE8WGdDhKPslzvnoynbhhbgHRKEDH36z6e1nL6h+g/UTbT6ruPAi1NBzQ==",
   "success": true,
   "projectFilePath": "/Users/christianguzman/Git/ProductManagerServices/Repository/DataAccess.MongoDB/DataAccess.MongoDB.csproj",
   "expectedPackageFiles": [

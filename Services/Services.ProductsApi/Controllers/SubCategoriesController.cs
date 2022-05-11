@@ -38,7 +38,7 @@ namespace Services.ProductsApi.Controllers
             {
                 var result = logic.GetByIdAsync(id);
                 await Task.WhenAll(result);
-                return Ok(result.Result);
+                return Ok(result.Result.result);
             }
             else
             {

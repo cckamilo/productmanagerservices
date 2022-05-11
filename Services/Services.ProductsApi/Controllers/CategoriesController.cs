@@ -31,7 +31,7 @@ namespace Services.ProductsApi.Controllers
         {
             var result = iCategoriesLogic.GetAsync();
             await Task.WhenAll(result);
-            return Ok(result.Result);
+            return Ok(result.Result.result);
         }
 
         [HttpPost]
