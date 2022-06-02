@@ -16,18 +16,23 @@ namespace Services.ProductsApi.Controllers
     [ApiController]
     public class SubCategoriesController : Controller
     {
-        private readonly ISubCategoriesLogic logic;
+        private readonly IProductFactory<SubCategoriesModel> logic;
+        private readonly IProductFactory<CategoriesModel> categories;
         private ServiceResponse response;
-        public SubCategoriesController(ISubCategoriesLogic _logic, ServiceResponse _response)
+
+        public SubCategoriesController( IProductFactory<SubCategoriesModel> _logic, ServiceResponse _response, IProductFactory<CategoriesModel> _categories) 
         {
             this.logic = _logic;
             this.response = _response;
+            this.categories = _categories;
         }
         // GET: api/values
         [HttpGet]
-        public IEnumerable<string> Get()
+        public async Task<IActionResult> Get()
         {
-            return new string[] { "value1", "value2" };
+            var response = logic.GetAsync();
+            await Task.WhenAll(response);
+            return Ok(response.Result.result);
         }
 
         // GET api/values/5
@@ -51,11 +56,27 @@ namespace Services.ProductsApi.Controllers
         [HttpPost]
         public async Task<IActionResult> Post(SubCategoriesModel model)
         {
-            if (model != null)
+            if (model != null && !string.IsNullOrEmpty(model.categoryId) && !string.IsNullOrEmpty(model.name))
             {
-                var result = logic.InsertAsync(model);
-                await Task.WhenAll(result);
-                return Ok(result.Result);
+                var exist = categories.GetByIdAsync(model.categoryId);
+                if (exist.Result.result != null)
+                {
+                    var subcategories = logic.InsertAsync(model);
+                    await Task.WhenAll(subcategories);
+                    if (subcategories.Result.error != null)
+                    {
+                        return Ok(subcategories.Result);                   
+                    }
+                    else
+                    {
+                        return Ok(subcategories.Result.result);
+                    }      
+                }
+                else
+                {
+                    response.error = "La categoria no existe";
+                    return Ok(response);
+                }       
             }
             else
             {
@@ -96,10 +117,6 @@ namespace Services.ProductsApi.Controllers
                 response.error = ex.Message;
                 return Ok(response);
             }
-
-         
-
-
         }
     }
 }

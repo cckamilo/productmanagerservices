@@ -21,6 +21,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
+using Models.ProductsApi.Models;
 using Models.ProductsApi.ResponseModels;
 
 namespace Services.ProductsApi
@@ -48,8 +49,8 @@ namespace Services.ProductsApi
             });
             //Bussines
             services.AddTransient<IProductsLogic, ProductsLogic>();
-            services.AddTransient<ICategoriesLogic, CategoriesLogic>();
-            services.AddTransient<ISubCategoriesLogic, SubCategoriesLogic>();
+            services.AddScoped(typeof(IProductFactory<CategoriesModel>), typeof(CategoriesLogic<CategoriesModel>));
+            services.AddScoped(typeof(IProductFactory<SubCategoriesModel>), typeof(SubCategoriesLogic<SubCategoriesModel>));
             services.AddTransient<ServiceResponse>();
             //Repository
             services.AddTransient<IProductsRepository, ProductsRepository>();
@@ -57,6 +58,7 @@ namespace Services.ProductsApi
             services.AddTransient<ISubCategoriesRepository, SubCategoriesRepository>();
             services.AddSingleton<IBlobService, BlobService>();
             services.AddSingleton<IProductsLookup, ProductsLookup>();
+            services.AddSingleton<ICategoriesLookup, CategoriesLookup>();
             //MongoDb Conexion
             services.Configure<StoreDataBaseSettings>(
                 Configuration.GetSection(nameof(StoreDataBaseSettings)));

@@ -16,13 +16,14 @@ namespace Services.ProductsApi.Controllers
     [ApiController]
     public class CategoriesController : Controller
     {
-        private readonly ICategoriesLogic iCategoriesLogic;  
+        //private readonly ICategoriesLogic iCategoriesLogic;
+        private readonly IProductFactory<CategoriesModel> iCategoriesLogic;
         private ServiceResponse response;
-        public CategoriesController( ICategoriesLogic _iCategoriesLogic, ServiceResponse _response )
+
+        public CategoriesController(IProductFactory<CategoriesModel> _iCategoriesLogic, ServiceResponse _response )
         {
             this.iCategoriesLogic = _iCategoriesLogic;
-            this.response = _response;
-     
+            this.response = _response;     
         }
 
         [HttpGet]
