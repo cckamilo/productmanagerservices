@@ -15,12 +15,11 @@ namespace Services.ProductsApi.Controllers
     [Route("api/v1/{controller}")]
     [ApiController]
     public class CategoriesController : Controller
-    {
-        //private readonly ICategoriesLogic iCategoriesLogic;
-        private readonly IProductFactory<CategoriesModel> iCategoriesLogic;
+    {   
+        private readonly IProductsFactory<CategoriesModel> iCategoriesLogic;
         private ServiceResponse response;
 
-        public CategoriesController(IProductFactory<CategoriesModel> _iCategoriesLogic, ServiceResponse _response )
+        public CategoriesController(IProductsFactory<CategoriesModel> _iCategoriesLogic, ServiceResponse _response )
         {
             this.iCategoriesLogic = _iCategoriesLogic;
             this.response = _response;     

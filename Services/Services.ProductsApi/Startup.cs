@@ -49,11 +49,13 @@ namespace Services.ProductsApi
             });
             //Bussines
             services.AddTransient<IProductsLogic, ProductsLogic>();
-            services.AddScoped(typeof(IProductFactory<CategoriesModel>), typeof(CategoriesLogic<CategoriesModel>));
-            services.AddScoped(typeof(IProductFactory<SubCategoriesModel>), typeof(SubCategoriesLogic<SubCategoriesModel>));
+            services.AddScoped(typeof(IProductsFactory<CategoriesModel>), typeof(CategoriesLogic<CategoriesModel>));
+            services.AddScoped(typeof(IProductsFactory<SubCategoriesModel>), typeof(SubCategoriesLogic<SubCategoriesModel>));
+            services.AddScoped(typeof(IProductsFactory<GendersModel>), typeof(GendersLogic<GendersModel>));
             services.AddTransient<ServiceResponse>();
             //Repository
             services.AddTransient<IProductsRepository, ProductsRepository>();
+            services.AddTransient<ISettingsRepository, SettingsRepository>();
             services.AddTransient<ICategoriesRepository, CategoriesRepository>();
             services.AddTransient<ISubCategoriesRepository, SubCategoriesRepository>();
             services.AddSingleton<IBlobService, BlobService>();

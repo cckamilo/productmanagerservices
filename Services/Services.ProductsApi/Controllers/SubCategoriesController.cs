@@ -16,11 +16,11 @@ namespace Services.ProductsApi.Controllers
     [ApiController]
     public class SubCategoriesController : Controller
     {
-        private readonly IProductFactory<SubCategoriesModel> logic;
-        private readonly IProductFactory<CategoriesModel> categories;
+        private readonly IProductsFactory<SubCategoriesModel> logic;
+        private readonly IProductsFactory<CategoriesModel> categories;
         private ServiceResponse response;
 
-        public SubCategoriesController( IProductFactory<SubCategoriesModel> _logic, ServiceResponse _response, IProductFactory<CategoriesModel> _categories) 
+        public SubCategoriesController( IProductsFactory<SubCategoriesModel> _logic, ServiceResponse _response, IProductsFactory<CategoriesModel> _categories) 
         {
             this.logic = _logic;
             this.response = _response;

@@ -5,7 +5,7 @@ using Models.ProductsApi.ResponseModels;
 
 namespace Business.ServiceProducts.Interfaces
 {
-    public interface IProductFactory<T> where T : class
+    public interface IProductsFactory<T> where T : class
     {
         Task<ServiceResponse> GetAsync();
 

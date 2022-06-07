@@ -7,9 +7,11 @@
   <ItemGroup>
     <None Remove="Models\" />
     <None Remove="ResponseModels\" />
+    <None Remove="Interfaces\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
     <Folder Include="ResponseModels\" />
+    <Folder Include="Interfaces\" />
   </ItemGroup>
 </Project>

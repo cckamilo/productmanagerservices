@@ -13,7 +13,7 @@ using MongoDB.Bson;
 
 namespace Business.ServiceProducts.Logic
 {
-    public class SubCategoriesLogic<T> : IProductFactory<T> where T : SubCategoriesModel
+    public class SubCategoriesLogic<T> : IProductsFactory<T> where T : SubCategoriesModel
     {
         //SubCategoriesLogic<T> : IProductFactory<T> where T : SubCategoriesModel
         private readonly ISubCategoriesRepository subcategoriesRepository;
