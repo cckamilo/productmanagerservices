@@ -1,8 +1,8 @@
-﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{9857C3B0-C988-4578-B801-28C89229B585}|Default">
-  <MonoDevelop.Ide.ItemProperties.Services.Services.ProductsApi PreferredExecutionTarget="/Applications/Safari.app" />
+﻿<Properties StartupConfiguration="{9857C3B0-C988-4578-B801-28C89229B585}|Default" GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Services.Services.ProductsApi PreferredExecutionTarget="/Applications/Safari.app" />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/christianguzman/Git/ProductManagerServices/Business/Business.ServiceProducts/Logic/GendersLogic.cs" relfile="Business/Business.ServiceProducts/Logic/GendersLogic.cs" line="29" column="1" />
@@ -16,11 +16,30 @@
       <Breakpoint file="/Users/christianguzman/Git/ProductManagerServices/Business/Business.ServiceProducts/Logic/SubCategoriesLogic.cs" relfile="Business/Business.ServiceProducts/Logic/SubCategoriesLogic.cs" line="117" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Business/Business.ServiceProducts/Logic/GendersLogic.cs">
+    <Files>
+      <File FileName="Business/Business.ServiceProducts/Logic/CategoriesLogic.cs" Line="31" Column="50" />
+      <File FileName="Business/Business.ServiceProducts/Interfaces/IProductsFactory.cs" Line="8" Column="22" />
+      <File FileName="Business/Business.ServiceProducts/Logic/GendersLogic.cs" Line="6" Column="32" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="ProductManagerServices" expanded="True" selected="True" />
+          <Node name="ProductManagerServices" expanded="True">
+            <Node name="Business" expanded="True">
+              <Node name="Business.ServiceProducts" expanded="True">
+                <Node name="Interfaces" expanded="True" />
+                <Node name="Logic" expanded="True">
+                  <Node name="GendersLogic.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+            <Node name="Models" expanded="True">
+              <Node name="Models.ProductsApi" expanded="True">
+                <Node name="Models" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
         </State>
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
