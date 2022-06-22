@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {
+    "net6.0": {
       "AutoMapper/11.0.1": {
         "type": "package",
         "dependencies": {
@@ -685,7 +685,7 @@
       },
       "Business.ServiceProducts/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
+        "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "AutoMapper": "11.0.1",
           "DataAccess.Azure": "1.0.0",
@@ -701,7 +701,7 @@
       },
       "DataAccess.Azure/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
+        "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Azure.Storage.Blobs": "12.10.0",
           "Microsoft.AspNetCore.Http.Features": "5.0.15"
@@ -715,7 +715,7 @@
       },
       "DataAccess.MongoDB/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
+        "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "MongoDB.Driver": "2.14.1"
         },
@@ -728,7 +728,7 @@
       },
       "Models.ProductsApi/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
+        "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
           "bin/placeholder/Models.ProductsApi.dll": {}
         },
@@ -1867,7 +1867,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net5.0": [
+    "net6.0": [
       "AutoMapper >= 11.0.1",
       "Azure.Storage.Blobs >= 12.10.0",
       "Business.ServiceProducts >= 1.0.0",
@@ -1892,17 +1892,17 @@
       "outputPath": "/Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/christianguzman/.config/NuGet/NuGet.Config"
+        "/Users/christianguzman/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net5.0"
+        "net6.0"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "projectReferences": {
             "/Users/christianguzman/Git/ProductManagerServices/Business/Business.ServiceProducts/Business.ServiceProducts.csproj": {
               "projectPath": "/Users/christianguzman/Git/ProductManagerServices/Business/Business.ServiceProducts/Business.ServiceProducts.csproj"
@@ -1926,8 +1926,8 @@
       }
     },
     "frameworks": {
-      "net5.0": {
-        "targetAlias": "net5.0",
+      "net6.0": {
+        "targetAlias": "net6.0",
         "dependencies": {
           "AutoMapper": {
             "target": "Package",
@@ -1968,7 +1968,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.408/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.301/RuntimeIdentifierGraph.json"
       }
     }
   }

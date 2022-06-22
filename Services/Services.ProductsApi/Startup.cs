@@ -23,6 +23,7 @@ using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 using Models.ProductsApi.Models;
 using Models.ProductsApi.ResponseModels;
+using Services.ProductsApi.Extensions;
 
 namespace Services.ProductsApi
 {
@@ -103,7 +104,7 @@ namespace Services.ProductsApi
             app.UseRouting();
 
             app.UseAuthentication();
-
+            app.UseErrorHandlerMiddleware();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

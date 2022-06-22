@@ -117,32 +117,22 @@ namespace Business.ServiceProducts.Logic
             SubCategories subcategory = iMapper.Map<SubCategories>(model);
             try
             {
-
                 var subCategories = subcategoriesRepository.SearchForAsync(x => x.categoryId == model.categoryId);
-                if (subCategories.Any())
+                var exist = subCategories.Where(x => x.name == model.name).FirstOrDefault();
+                if (exist != null)
                 {
-                    var exist = subCategories.Where(x => x.name == model.name).FirstOrDefault();
-                    if (exist != null)
-                    {
-                        response.error = "La subcategoria " + exist.name + " ya existe";
-                        response.result = null;
-                        return response;
-                    }
-                    subcategory.id = ObjectId.GenerateNewId().ToString();
-                    subcategory.name = model.name;
-                    subcategory.categoryId = model.categoryId;
-                    subcategory.active = true;
-                    subcategory.creationDate = DateTime.Now;
-                    var result = await subcategoriesRepository.InsertAsync(subcategory);
-                    response.error = null;
-                    response.result = result.id;
-                }
-                else
-                {
-                    response.error = "La categoria no existe";
+                    response.error = "La subcategoria " + exist.name + " ya existe";
                     response.result = null;
                     return response;
                 }
+                subcategory.id = ObjectId.GenerateNewId().ToString();
+                subcategory.name = model.name;
+                subcategory.categoryId = model.categoryId;
+                subcategory.active = true;
+                subcategory.creationDate = DateTime.Now;
+                var result = await subcategoriesRepository.InsertAsync(subcategory);
+                response.error = null;
+                response.result = result.id;
             }
             catch (Exception ex)
             {

@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {
+    "net6.0": {
       "Azure.Core/1.19.0": {
         "type": "package",
         "dependencies": {
@@ -537,7 +537,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net5.0": [
+    "net6.0": [
       "Azure.Storage.Blobs >= 12.10.0",
       "Microsoft.AspNetCore.Http.Features >= 5.0.15"
     ]
@@ -555,17 +555,17 @@
       "outputPath": "/Users/christianguzman/Git/ProductManagerServices/Repository/DataAccess.Azure/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/christianguzman/.config/NuGet/NuGet.Config"
+        "/Users/christianguzman/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net5.0"
+        "net6.0"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "projectReferences": {}
         }
       },
@@ -576,8 +576,8 @@
       }
     },
     "frameworks": {
-      "net5.0": {
-        "targetAlias": "net5.0",
+      "net6.0": {
+        "targetAlias": "net6.0",
         "dependencies": {
           "Azure.Storage.Blobs": {
             "target": "Package",
@@ -603,7 +603,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.408/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.301/RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -51,7 +51,11 @@ namespace Services.ProductsApi.Controllers
                 return Ok(response);
             }
         }
-
+        /// <summary>
+        /// Prueba de commit
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         // POST api/values
         [HttpPost]
         public async Task<IActionResult> Post(SubCategoriesModel model)
