@@ -1,0 +1,40 @@
+﻿<Properties StartupConfiguration="{9857C3B0-C988-4578-B801-28C89229B585}|Default" GitUserInfo="UsingGIT">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Services/Services.ProductsApi/Middlewares/ErrorHandlerMiddleware.cs">
+    <Files>
+      <File FileName="Services/Services.ProductsApi/Controllers/SettingsController.cs" Line="33" Column="34" />
+      <File FileName="Services/Services.ProductsApi/Middlewares/ErrorHandlerMiddleware.cs" Line="23" Column="16" />
+      <File FileName="Business/Business.ServiceProducts/Exceptions/ApiException.cs" Line="17" Column="1" />
+      <File FileName="Models/Models.ProductsApi/ResponseModels/Error.cs" Line="14" Column="6" />
+      <File FileName="Services/Services.ProductsApi/Startup.cs" Line="100" Column="30" />
+      <File FileName="Services/Services.ProductsApi/Extensions/AppExtensions.cs" Line="15" Column="1" />
+      <File FileName="Services/Services.ProductsApi/appsettings.json" Line="12" Column="41" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ProductManagerServices" expanded="True">
+            <Node name="Services" expanded="True">
+              <Node name="Services.ProductsApi" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/christianguzman/Git/ProductManagerServices/Business/Business.ServiceProducts/Logic/GendersLogic.cs" relfile="Business/Business.ServiceProducts/Logic/GendersLogic.cs" line="29" column="1" />
+      <Breakpoint file="/Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/Controllers/SettingsController.cs" relfile="Services/Services.ProductsApi/Controllers/SettingsController.cs" line="33" column="1" />
+      <Breakpoint file="/Users/christianguzman/Git/ProductManagerServices/Repository/DataAccess.MongoDB/Repository/MongoDbRepository.cs" relfile="Repository/DataAccess.MongoDB/Repository/MongoDbRepository.cs" line="75" column="1" />
+      <Breakpoint file="/Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/Middlewares/ErrorHandlerMiddleware.cs" relfile="Services/Services.ProductsApi/Middlewares/ErrorHandlerMiddleware.cs" line="29" column="1" />
+      <Breakpoint file="/Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/Middlewares/ErrorHandlerMiddleware.cs" relfile="Services/Services.ProductsApi/Middlewares/ErrorHandlerMiddleware.cs" line="25" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Services.Services.ProductsApi PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>

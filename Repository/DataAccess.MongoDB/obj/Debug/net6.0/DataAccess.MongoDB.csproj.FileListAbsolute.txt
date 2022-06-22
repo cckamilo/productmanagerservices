@@ -1,0 +1,12 @@
+/Users/christianguzman/Git/ProductManagerServices/Repository/DataAccess.MongoDB/bin/Debug/net6.0/DataAccess.MongoDB.deps.json
+/Users/christianguzman/Git/ProductManagerServices/Repository/DataAccess.MongoDB/bin/Debug/net6.0/DataAccess.MongoDB.dll
+/Users/christianguzman/Git/ProductManagerServices/Repository/DataAccess.MongoDB/bin/Debug/net6.0/DataAccess.MongoDB.pdb
+/Users/christianguzman/Git/ProductManagerServices/Repository/DataAccess.MongoDB/obj/Debug/net6.0/DataAccess.MongoDB.csproj.AssemblyReference.cache
+/Users/christianguzman/Git/ProductManagerServices/Repository/DataAccess.MongoDB/obj/Debug/net6.0/DataAccess.MongoDB.GeneratedMSBuildEditorConfig.editorconfig
+/Users/christianguzman/Git/ProductManagerServices/Repository/DataAccess.MongoDB/obj/Debug/net6.0/DataAccess.MongoDB.AssemblyInfoInputs.cache
+/Users/christianguzman/Git/ProductManagerServices/Repository/DataAccess.MongoDB/obj/Debug/net6.0/DataAccess.MongoDB.AssemblyInfo.cs
+/Users/christianguzman/Git/ProductManagerServices/Repository/DataAccess.MongoDB/obj/Debug/net6.0/DataAccess.MongoDB.csproj.CoreCompileInputs.cache
+/Users/christianguzman/Git/ProductManagerServices/Repository/DataAccess.MongoDB/obj/Debug/net6.0/DataAccess.MongoDB.dll
+/Users/christianguzman/Git/ProductManagerServices/Repository/DataAccess.MongoDB/obj/Debug/net6.0/refint/DataAccess.MongoDB.dll
+/Users/christianguzman/Git/ProductManagerServices/Repository/DataAccess.MongoDB/obj/Debug/net6.0/DataAccess.MongoDB.pdb
+/Users/christianguzman/Git/ProductManagerServices/Repository/DataAccess.MongoDB/obj/Debug/net6.0/ref/DataAccess.MongoDB.dll

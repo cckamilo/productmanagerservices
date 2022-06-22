@@ -1,0 +1,12 @@
+/Users/christianguzman/Git/ProductManagerServices/Models/Models.ProductsApi/bin/Debug/net6.0/Models.ProductsApi.deps.json
+/Users/christianguzman/Git/ProductManagerServices/Models/Models.ProductsApi/bin/Debug/net6.0/Models.ProductsApi.dll
+/Users/christianguzman/Git/ProductManagerServices/Models/Models.ProductsApi/bin/Debug/net6.0/Models.ProductsApi.pdb
+/Users/christianguzman/Git/ProductManagerServices/Models/Models.ProductsApi/obj/Debug/net6.0/Models.ProductsApi.csproj.AssemblyReference.cache
+/Users/christianguzman/Git/ProductManagerServices/Models/Models.ProductsApi/obj/Debug/net6.0/Models.ProductsApi.GeneratedMSBuildEditorConfig.editorconfig
+/Users/christianguzman/Git/ProductManagerServices/Models/Models.ProductsApi/obj/Debug/net6.0/Models.ProductsApi.AssemblyInfoInputs.cache
+/Users/christianguzman/Git/ProductManagerServices/Models/Models.ProductsApi/obj/Debug/net6.0/Models.ProductsApi.AssemblyInfo.cs
+/Users/christianguzman/Git/ProductManagerServices/Models/Models.ProductsApi/obj/Debug/net6.0/Models.ProductsApi.csproj.CoreCompileInputs.cache
+/Users/christianguzman/Git/ProductManagerServices/Models/Models.ProductsApi/obj/Debug/net6.0/Models.ProductsApi.dll
+/Users/christianguzman/Git/ProductManagerServices/Models/Models.ProductsApi/obj/Debug/net6.0/refint/Models.ProductsApi.dll
+/Users/christianguzman/Git/ProductManagerServices/Models/Models.ProductsApi/obj/Debug/net6.0/Models.ProductsApi.pdb
+/Users/christianguzman/Git/ProductManagerServices/Models/Models.ProductsApi/obj/Debug/net6.0/ref/Models.ProductsApi.dll
