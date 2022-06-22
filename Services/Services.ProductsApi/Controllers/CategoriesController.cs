@@ -90,7 +90,7 @@ namespace Services.ProductsApi.Controllers
 
         }
 
-        [HttpGet("search/{id}")]
+        [HttpGet("{id}")]
         public async Task<IActionResult> GetByIdCategories(string id)
         {
             if (!string.IsNullOrEmpty(id))
