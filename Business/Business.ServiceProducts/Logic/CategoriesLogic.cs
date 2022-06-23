@@ -15,14 +15,16 @@ namespace Business.ServiceProducts.Logic
     public class CategoriesLogic<T> : IProductsFactory<T> where T : CategoriesModel
     {
         private readonly ICategoriesRepository repository;
+        private readonly ISubCategoriesRepository subcategoriesDal;
         private ServiceResponse response;
         private readonly IMapper iMapper;
 
-        public CategoriesLogic(ICategoriesRepository _respository, ServiceResponse _response, IMapper _iMapper)
+        public CategoriesLogic(ICategoriesRepository _respository, ServiceResponse _response, IMapper _iMapper, ISubCategoriesRepository subcategoriesDal)
         {
             this.repository = _respository;
             this.response = _response;
             this.iMapper = _iMapper;
+            this.subcategoriesDal = subcategoriesDal;
         }
 
         public async Task<ServiceResponse> GetAsync()
@@ -45,10 +47,10 @@ namespace Business.ServiceProducts.Logic
 
         public async Task<ServiceResponse> GetByIdAsync(string id)
         {
-            var result = await repository.GetByIdAsync(id);
+            var result = await repository.GetByIdAsync(id);      
             response.result = new List<object>();
             if (result != null)
-            {
+            {  
                 response.error = null;
                 response.result = result;
             }
@@ -61,7 +63,6 @@ namespace Business.ServiceProducts.Logic
             return response;
         }
 
-
         public async Task<ServiceResponse> DeleteByIdAsync(string id)
         {
             try
@@ -69,9 +70,18 @@ namespace Business.ServiceProducts.Logic
                 var exist = await repository.GetByIdAsync(id);
                 if (exist != null)
                 {
-                    var res = await repository.DeleteByIdAsync(id);
-                    response.error = null;
-                    response.result = res;
+                    var subcategories = subcategoriesDal.SearchForAsync(x => x.categoryId == id);
+                    if (!subcategories.Any())
+                    {
+                        var res = await repository.DeleteByIdAsync(id);
+                        response.error = null;
+                        response.result = res;
+                    }
+                    else
+                    {
+                        response.error = "No se puede eliminar registro, tiene subcategorias asociadas";
+                        response.result = null;
+                    }                         
                 }
                 else
                 {
@@ -124,7 +134,6 @@ namespace Business.ServiceProducts.Logic
 
             return response;
         }
-
 
         public async Task<ServiceResponse> InsertAsync(T model)
         {

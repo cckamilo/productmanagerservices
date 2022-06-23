@@ -20,7 +20,7 @@ namespace Services.ProductsApi.Controllers
         private readonly IProductsFactory<CategoriesModel> categories;
         private ServiceResponse response;
 
-        public SubCategoriesController( IProductsFactory<SubCategoriesModel> _logic, ServiceResponse _response, IProductsFactory<CategoriesModel> _categories) 
+        public SubCategoriesController(IProductsFactory<SubCategoriesModel> _logic, ServiceResponse _response, IProductsFactory<CategoriesModel> _categories)
         {
             this.logic = _logic;
             this.response = _response;
@@ -51,12 +51,6 @@ namespace Services.ProductsApi.Controllers
                 return Ok(response);
             }
         }
-        /// <summary>
-        /// Prueba de commit
-        /// </summary>
-        /// <param name="model"></param>
-        /// <returns></returns>
-        // POST api/values
         [HttpPost]
         public async Task<IActionResult> Post(SubCategoriesModel model)
         {
@@ -67,20 +61,14 @@ namespace Services.ProductsApi.Controllers
                 {
                     var subcategories = logic.InsertAsync(model);
                     await Task.WhenAll(subcategories);
-                    if (subcategories.Result.error != null)
-                    {
-                        return Ok(subcategories.Result);                   
-                    }
-                    else
-                    {
-                        return Ok(subcategories.Result.result);
-                    }      
+                    return Ok(subcategories.Result);
+
                 }
                 else
                 {
                     response.error = "La categoria no existe";
                     return Ok(response);
-                }       
+                }
             }
             else
             {

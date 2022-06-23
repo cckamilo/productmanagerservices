@@ -15,7 +15,6 @@ namespace Business.ServiceProducts.Logic
 {
     public class SubCategoriesLogic<T> : IProductsFactory<T> where T : SubCategoriesModel
     {
-        //SubCategoriesLogic<T> : IProductFactory<T> where T : SubCategoriesModel
         private readonly ISubCategoriesRepository subcategoriesRepository;
         private readonly ICategoriesLookup iCategoriesLookup;
         private ServiceResponse response;
