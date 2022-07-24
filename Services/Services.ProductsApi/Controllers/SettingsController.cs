@@ -12,36 +12,41 @@ using Models.ProductsApi.ResponseModels;
 namespace Services.ProductsApi.Controllers
 {
     [Produces("application/json")]
-    [Route("api/v2/{controller}")]
+    [Route("api/v1/{controller}/")]
     [ApiController]
     public class SettingsController : Controller
     {
         private readonly IProductsFactory<GendersModel> gendersLogic;
+        private readonly IProductsFactory<SizesModel> sizesLogic;
         private ServiceResponse response;
-        public SettingsController(IProductsFactory<GendersModel> _gendersLogic, ServiceResponse _response)
+        public SettingsController(IProductsFactory<GendersModel> _gendersLogic, ServiceResponse _response, IProductsFactory<SizesModel> _sizesLogic)
         {
             this.gendersLogic = _gendersLogic;
             this.response = _response;
-        } 
+            this.sizesLogic = _sizesLogic;
+        }
 
         [HttpPost("{context}")]
         // GET: /<controller>/
-        public async Task<IActionResult> Post(string context, SettingsBody body)
+        public async Task<IActionResult> Post(SettingsEntity entity, string context)
         {
             try
             {
-                if (body != null)
+                if (entity != null)
                 {
                     switch (context)
                     {
                         case "genders":
-                            var result = gendersLogic.InsertAsync(body.genders);
-                            await Task.WhenAll(result);
-                            response = result.Result;
+                            var responseGenders = gendersLogic.InsertAsync(entity.genders);
+                            await Task.WhenAll(responseGenders);
+                            response = responseGenders.Result;
                             break;
                         case "colors":
                             break;
                         case "sizes":
+                            var resultSizes = sizesLogic.InsertAsync(entity.sizes);
+                            await Task.WhenAll(resultSizes);
+                            response = resultSizes.Result;
                             break;
                         default:
                             response.error = "Error de contexto.";

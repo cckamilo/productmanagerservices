@@ -1,9 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 using Models.ProductsApi.Interfaces;
 
 namespace Models.ProductsApi.Models
 {
-    public class SizesModel : IItems
+    public class SizesModel : IItemsModel
     {
         public SizesModel()
         {
@@ -13,5 +14,7 @@ namespace Models.ProductsApi.Models
         public string name { get; set; }
         public string value { get; set; }
         public bool active { get; set; }
+        public List<GroupItemsModel> items { get; set; }
+    
     }
 }

@@ -20,19 +20,19 @@ namespace DataAccess.MongoDB.Models
         public string subCategoryId { get; set; }
         public string title { get; set; }
         public string description { get; set; }
-        public List<Items> sizes { get; set; }
-        public List<Items> colors { get; set; }
-        public List<Items> genders { get; set; }
+        //public List<Items> sizes { get; set; }
+        //public List<Items> colors { get; set; }
+        //public List<Items> genders { get; set; }
         public int stock { get; set; }
         public int price { get; set; }
         public List<File> images { get; set; }
         public string date { get; set; }
 
     }
-    public class Items
-    {
-        public string item { get; set; }
-    }
+    //public class Items
+    //{
+    //    public string item { get; set; }
+    //}
 
     public class File
     {

@@ -22,33 +22,33 @@ namespace DataAccess.MongoDB.Models
 
     public class Sizes : IItems
     {
-        [BsonId]
-        [BsonRepresentation(BsonType.ObjectId)]
         public string id { get; set; }
         public string name { get; set; }
         public string value { get; set; }
+        public List<GroupItems> items { get; set; }
         public bool active { get; set; }
+        
     }
 
     public class Colors : IItems
     {
-        [BsonId]
-        [BsonRepresentation(BsonType.ObjectId)]
         public string id { get; set; }
         public string name { get; set; }
         public string value { get; set; }
+        public List<GroupItems> items { get; set; }
         public bool active { get; set; }
+       
     }
 
 
     public class Genders : IItems
     {
-        [BsonId]
-        [BsonRepresentation(BsonType.ObjectId)]
         public string id { get; set; }
         public string name { get; set; }
         public string value { get; set; }
+        public List<GroupItems> items { get; set; }
         public bool active { get; set; }
+       
     }
 
 }

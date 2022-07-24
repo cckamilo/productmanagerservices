@@ -53,6 +53,7 @@ namespace Services.ProductsApi
             services.AddScoped(typeof(IProductsFactory<CategoriesModel>), typeof(CategoriesLogic<CategoriesModel>));
             services.AddScoped(typeof(IProductsFactory<SubCategoriesModel>), typeof(SubCategoriesLogic<SubCategoriesModel>));
             services.AddScoped(typeof(IProductsFactory<GendersModel>), typeof(GendersLogic<GendersModel>));
+            services.AddScoped(typeof(IProductsFactory<SizesModel>), typeof(SizesLogic<SizesModel>));
             services.AddTransient<ServiceResponse>();
             //Repository
             services.AddTransient<IProductsRepository, ProductsRepository>();
