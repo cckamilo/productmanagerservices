@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oZHTuGKF2sOJ9zi/gFyeeGzGjY1ym31mRLNWk2LhijLxw76t7kB6CvLRKBIlUlOwcrvXDswLuXLpsWsbgy/Cfg==",
+  "dgSpecHash": "2Bb5qvPNBitZHTnzjd9v2/gj8Ij4ti3yZZshB/bHRuYZGi9oOGcs636VfFJGC5zk//u5JiKbIeUCKCOnVOLblw==",
   "success": true,
-  "projectFilePath": "/Users/christianguzman/Git/ProductManagerServices/Models/Models.ProductsApi/Models.ProductsApi.csproj",
+  "projectFilePath": "/Users/christiancamilocastroguzman/Documents/Proyectos/Git/productmanagerservices/Models/Models.ProductsApi/Models.ProductsApi.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

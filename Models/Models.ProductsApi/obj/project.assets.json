@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "/Users/christianguzman/.nuget/packages/": {}
+    "/Users/christiancamilocastroguzman/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/christianguzman/Git/ProductManagerServices/Models/Models.ProductsApi/Models.ProductsApi.csproj",
+      "projectUniqueName": "/Users/christiancamilocastroguzman/Documents/Proyectos/Git/productmanagerservices/Models/Models.ProductsApi/Models.ProductsApi.csproj",
       "projectName": "Models.ProductsApi",
-      "projectPath": "/Users/christianguzman/Git/ProductManagerServices/Models/Models.ProductsApi/Models.ProductsApi.csproj",
-      "packagesPath": "/Users/christianguzman/.nuget/packages/",
-      "outputPath": "/Users/christianguzman/Git/ProductManagerServices/Models/Models.ProductsApi/obj/",
+      "projectPath": "/Users/christiancamilocastroguzman/Documents/Proyectos/Git/productmanagerservices/Models/Models.ProductsApi/Models.ProductsApi.csproj",
+      "packagesPath": "/Users/christiancamilocastroguzman/.nuget/packages/",
+      "outputPath": "/Users/christiancamilocastroguzman/Documents/Proyectos/Git/productmanagerservices/Models/Models.ProductsApi/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/christianguzman/.nuget/NuGet/NuGet.Config"
+        "/Users/christiancamilocastroguzman/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -49,7 +49,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -58,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
       }
     }
   }

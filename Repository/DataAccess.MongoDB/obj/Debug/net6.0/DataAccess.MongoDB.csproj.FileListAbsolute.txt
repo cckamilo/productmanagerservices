@@ -10,3 +10,15 @@
 /Users/christianguzman/Git/ProductManagerServices/Repository/DataAccess.MongoDB/obj/Debug/net6.0/refint/DataAccess.MongoDB.dll
 /Users/christianguzman/Git/ProductManagerServices/Repository/DataAccess.MongoDB/obj/Debug/net6.0/DataAccess.MongoDB.pdb
 /Users/christianguzman/Git/ProductManagerServices/Repository/DataAccess.MongoDB/obj/Debug/net6.0/ref/DataAccess.MongoDB.dll
+/Users/christiancamilocastroguzman/Documents/Proyectos/Git/productmanagerservices/Repository/DataAccess.MongoDB/bin/Debug/net6.0/DataAccess.MongoDB.deps.json
+/Users/christiancamilocastroguzman/Documents/Proyectos/Git/productmanagerservices/Repository/DataAccess.MongoDB/bin/Debug/net6.0/DataAccess.MongoDB.dll
+/Users/christiancamilocastroguzman/Documents/Proyectos/Git/productmanagerservices/Repository/DataAccess.MongoDB/bin/Debug/net6.0/DataAccess.MongoDB.pdb
+/Users/christiancamilocastroguzman/Documents/Proyectos/Git/productmanagerservices/Repository/DataAccess.MongoDB/obj/Debug/net6.0/DataAccess.MongoDB.csproj.AssemblyReference.cache
+/Users/christiancamilocastroguzman/Documents/Proyectos/Git/productmanagerservices/Repository/DataAccess.MongoDB/obj/Debug/net6.0/DataAccess.MongoDB.GeneratedMSBuildEditorConfig.editorconfig
+/Users/christiancamilocastroguzman/Documents/Proyectos/Git/productmanagerservices/Repository/DataAccess.MongoDB/obj/Debug/net6.0/DataAccess.MongoDB.AssemblyInfoInputs.cache
+/Users/christiancamilocastroguzman/Documents/Proyectos/Git/productmanagerservices/Repository/DataAccess.MongoDB/obj/Debug/net6.0/DataAccess.MongoDB.AssemblyInfo.cs
+/Users/christiancamilocastroguzman/Documents/Proyectos/Git/productmanagerservices/Repository/DataAccess.MongoDB/obj/Debug/net6.0/DataAccess.MongoDB.csproj.CoreCompileInputs.cache
+/Users/christiancamilocastroguzman/Documents/Proyectos/Git/productmanagerservices/Repository/DataAccess.MongoDB/obj/Debug/net6.0/DataAccess.MongoDB.dll
+/Users/christiancamilocastroguzman/Documents/Proyectos/Git/productmanagerservices/Repository/DataAccess.MongoDB/obj/Debug/net6.0/refint/DataAccess.MongoDB.dll
+/Users/christiancamilocastroguzman/Documents/Proyectos/Git/productmanagerservices/Repository/DataAccess.MongoDB/obj/Debug/net6.0/DataAccess.MongoDB.pdb
+/Users/christiancamilocastroguzman/Documents/Proyectos/Git/productmanagerservices/Repository/DataAccess.MongoDB/obj/Debug/net6.0/ref/DataAccess.MongoDB.dll

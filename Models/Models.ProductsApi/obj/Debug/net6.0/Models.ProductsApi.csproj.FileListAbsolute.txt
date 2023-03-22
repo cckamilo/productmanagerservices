@@ -10,3 +10,15 @@
 /Users/christianguzman/Git/ProductManagerServices/Models/Models.ProductsApi/obj/Debug/net6.0/refint/Models.ProductsApi.dll
 /Users/christianguzman/Git/ProductManagerServices/Models/Models.ProductsApi/obj/Debug/net6.0/Models.ProductsApi.pdb
 /Users/christianguzman/Git/ProductManagerServices/Models/Models.ProductsApi/obj/Debug/net6.0/ref/Models.ProductsApi.dll
+/Users/christiancamilocastroguzman/Documents/Proyectos/Git/productmanagerservices/Models/Models.ProductsApi/bin/Debug/net6.0/Models.ProductsApi.deps.json
+/Users/christiancamilocastroguzman/Documents/Proyectos/Git/productmanagerservices/Models/Models.ProductsApi/bin/Debug/net6.0/Models.ProductsApi.dll
+/Users/christiancamilocastroguzman/Documents/Proyectos/Git/productmanagerservices/Models/Models.ProductsApi/bin/Debug/net6.0/Models.ProductsApi.pdb
+/Users/christiancamilocastroguzman/Documents/Proyectos/Git/productmanagerservices/Models/Models.ProductsApi/obj/Debug/net6.0/Models.ProductsApi.csproj.AssemblyReference.cache
+/Users/christiancamilocastroguzman/Documents/Proyectos/Git/productmanagerservices/Models/Models.ProductsApi/obj/Debug/net6.0/Models.ProductsApi.GeneratedMSBuildEditorConfig.editorconfig
+/Users/christiancamilocastroguzman/Documents/Proyectos/Git/productmanagerservices/Models/Models.ProductsApi/obj/Debug/net6.0/Models.ProductsApi.AssemblyInfoInputs.cache
+/Users/christiancamilocastroguzman/Documents/Proyectos/Git/productmanagerservices/Models/Models.ProductsApi/obj/Debug/net6.0/Models.ProductsApi.AssemblyInfo.cs
+/Users/christiancamilocastroguzman/Documents/Proyectos/Git/productmanagerservices/Models/Models.ProductsApi/obj/Debug/net6.0/Models.ProductsApi.csproj.CoreCompileInputs.cache
+/Users/christiancamilocastroguzman/Documents/Proyectos/Git/productmanagerservices/Models/Models.ProductsApi/obj/Debug/net6.0/Models.ProductsApi.dll
+/Users/christiancamilocastroguzman/Documents/Proyectos/Git/productmanagerservices/Models/Models.ProductsApi/obj/Debug/net6.0/refint/Models.ProductsApi.dll
+/Users/christiancamilocastroguzman/Documents/Proyectos/Git/productmanagerservices/Models/Models.ProductsApi/obj/Debug/net6.0/Models.ProductsApi.pdb
+/Users/christiancamilocastroguzman/Documents/Proyectos/Git/productmanagerservices/Models/Models.ProductsApi/obj/Debug/net6.0/ref/Models.ProductsApi.dll
