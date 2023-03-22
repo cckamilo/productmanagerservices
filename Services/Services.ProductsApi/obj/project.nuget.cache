@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "2uw/2WKI2I9hVkw6kWlqU7wYUTPLlsj677+0H9Bfxy9d/Z3tOzBqF2BtMCnI8Zbl/KDH7+vE+kbiVQcFu8WuGg==",
+  "dgSpecHash": "YfIH9bCKWN2VjkOUWN3PbQPytRVnC9cbE98+CCvQig+Uz/vn2jvj1vOTCv69+/ZNG4AuZc/LVH3E46StU1eyug==",
   "success": true,
   "projectFilePath": "/Users/christiancamilocastroguzman/Documents/Proyectos/Git/productmanagerservices/Services/Services.ProductsApi/Services.ProductsApi.csproj",
   "expectedPackageFiles": [
-    "/Users/christiancamilocastroguzman/.nuget/packages/automapper/11.0.1/automapper.11.0.1.nupkg.sha512",
+    "/Users/christiancamilocastroguzman/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/Users/christiancamilocastroguzman/.nuget/packages/azure.core/1.19.0/azure.core.1.19.0.nupkg.sha512",
     "/Users/christiancamilocastroguzman/.nuget/packages/azure.storage.blobs/12.10.0/azure.storage.blobs.12.10.0.nupkg.sha512",
     "/Users/christiancamilocastroguzman/.nuget/packages/azure.storage.common/12.9.0/azure.storage.common.12.9.0.nupkg.sha512",
