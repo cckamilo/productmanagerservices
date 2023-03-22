@@ -1,68 +1,40 @@
-﻿<Properties StartupConfiguration="{9857C3B0-C988-4578-B801-28C89229B585}|Default" GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.ItemProperties.Services.Services.ProductsApi PreferredExecutionTarget="/Applications/Safari.app" />
-  <MultiItemStartupConfigurations />
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{9857C3B0-C988-4578-B801-28C89229B585}|Default">
+  <MonoDevelop.Ide.ItemProperties.Services.Services.ProductsApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/christianguzman/Git/ProductManagerServices/Business/Business.ServiceProducts/Logic/GendersLogic.cs" relfile="Business/Business.ServiceProducts/Logic/GendersLogic.cs" line="29" column="1" />
-      <Breakpoint file="/Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/Controllers/SettingsController.cs" relfile="Services/Services.ProductsApi/Controllers/SettingsController.cs" line="35" column="1" />
-      <Breakpoint file="/Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/Controllers/SubCategoriesController.cs" relfile="Services/Services.ProductsApi/Controllers/SubCategoriesController.cs" line="57" column="1" />
-      <Breakpoint file="/Users/christianguzman/Git/ProductManagerServices/Business/Business.ServiceProducts/Logic/CategoriesLogic.cs" relfile="Business/Business.ServiceProducts/Logic/CategoriesLogic.cs" line="32" column="1" />
-      <Breakpoint file="/Users/christianguzman/Git/ProductManagerServices/Business/Business.ServiceProducts/Logic/SubCategoriesLogic.cs" relfile="Business/Business.ServiceProducts/Logic/SubCategoriesLogic.cs" line="116" column="1" />
-      <Breakpoint file="/Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/Controllers/CategoriesController.cs" relfile="Services/Services.ProductsApi/Controllers/CategoriesController.cs" line="97" column="1" />
-      <Breakpoint file="/Users/christianguzman/Git/ProductManagerServices/Repository/DataAccess.MongoDB/Lookup/ProductsLookup.cs" relfile="Repository/DataAccess.MongoDB/Lookup/ProductsLookup.cs" line="15" column="1" />
-      <Breakpoint file="/Users/christianguzman/Git/ProductManagerServices/Business/Business.ServiceProducts/Logic/CategoriesLogic.cs" relfile="Business/Business.ServiceProducts/Logic/CategoriesLogic.cs" line="70" column="1" />
-      <Breakpoint file="/Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/Controllers/SettingsController.cs" relfile="Services/Services.ProductsApi/Controllers/SettingsController.cs" line="47" column="1" />
-      <Breakpoint file="/Users/christianguzman/Git/ProductManagerServices/Business/Business.ServiceProducts/Logic/SizesLogic.cs" relfile="Business/Business.ServiceProducts/Logic/SizesLogic.cs" line="47" column="1" />
-      <Breakpoint file="/Users/christianguzman/Git/ProductManagerServices/Services/Services.ProductsApi/Controllers/SettingsController.cs" relfile="Services/Services.ProductsApi/Controllers/SettingsController.cs" line="63" column="1" />
-    </BreakpointStore>
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Repository/DataAccess.MongoDB/Interfaces/IItems.cs">
     <Files>
-      <File FileName="Services/Services.ProductsApi/Controllers/SettingsController.cs" Line="44" Column="39" />
-      <File FileName="Business/Business.ServiceProducts/Logic/SizesLogic.cs" Line="51" Column="49" />
-      <File FileName="Business/Business.ServiceProducts/AutoMapper/MappingProfile.cs" Line="22" Column="46" />
-      <File FileName="Business/Business.ServiceProducts/Logic/CategoriesLogic.cs" Line="129" Column="33" />
-      <File FileName="Business/Business.ServiceProducts/Logic/ProductsLogic.cs" Line="126" Column="70" />
-      <File FileName="Repository/DataAccess.MongoDB/Models/Products.cs" Line="8" Column="18" />
-      <File FileName="Repository/DataAccess.MongoDB/Models/Settings.cs" Line="23" Column="31" />
-      <File FileName="Repository/DataAccess.MongoDB/Interfaces/IItems.cs" Line="15" Column="6" />
+      <File FileName="Services/Services.ProductsApi/Controllers/SettingsController.cs" />
+      <File FileName="Business/Business.ServiceProducts/Logic/SizesLogic.cs" />
+      <File FileName="Business/Business.ServiceProducts/AutoMapper/MappingProfile.cs" />
+      <File FileName="Business/Business.ServiceProducts/Logic/CategoriesLogic.cs" />
+      <File FileName="Business/Business.ServiceProducts/Logic/ProductsLogic.cs" />
+      <File FileName="Repository/DataAccess.MongoDB/Models/Products.cs" />
+      <File FileName="Repository/DataAccess.MongoDB/Models/Settings.cs" />
+      <File FileName="Repository/DataAccess.MongoDB/Interfaces/IItems.cs" Line="21" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="ProductManagerServices" expanded="True">
-            <Node name="Business" expanded="True">
-              <Node name="Business.ServiceProducts" expanded="True">
-                <Node name="AutoMapper" expanded="True" />
-                <Node name="Logic" expanded="True" />
-              </Node>
-            </Node>
-            <Node name="Models" expanded="True">
-              <Node name="Models.ProductsApi" expanded="True">
-                <Node name="Models" expanded="True" />
-              </Node>
-            </Node>
-            <Node name="Repository" expanded="True">
-              <Node name="DataAccess.MongoDB" expanded="True">
-                <Node name="Interfaces" expanded="True">
-                  <Node name="IItems.cs" selected="True" />
-                </Node>
-                <Node name="Models" expanded="True" />
-              </Node>
-            </Node>
-            <Node name="Services" expanded="True">
-              <Node name="Services.ProductsApi" expanded="True">
-                <Node name="Controllers" expanded="True" />
-              </Node>
-            </Node>
-          </Node>
+          <Node name="ProductManagerServices" expanded="True" selected="True" />
         </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/christiancamilocastroguzman/Documents/Proyectos/Git/productmanagerservices/Business/Business.ServiceProducts/Logic/GendersLogic.cs" relfile="Business/Business.ServiceProducts/Logic/GendersLogic.cs" line="29" column="1" />
+      <Breakpoint file="/Users/christiancamilocastroguzman/Documents/Proyectos/Git/productmanagerservices/Services/Services.ProductsApi/Controllers/SettingsController.cs" relfile="Services/Services.ProductsApi/Controllers/SettingsController.cs" line="35" column="1" />
+      <Breakpoint file="/Users/christiancamilocastroguzman/Documents/Proyectos/Git/productmanagerservices/Services/Services.ProductsApi/Controllers/SubCategoriesController.cs" relfile="Services/Services.ProductsApi/Controllers/SubCategoriesController.cs" line="57" column="1" />
+      <Breakpoint file="/Users/christiancamilocastroguzman/Documents/Proyectos/Git/productmanagerservices/Business/Business.ServiceProducts/Logic/CategoriesLogic.cs" relfile="Business/Business.ServiceProducts/Logic/CategoriesLogic.cs" line="32" column="1" />
+      <Breakpoint file="/Users/christiancamilocastroguzman/Documents/Proyectos/Git/productmanagerservices/Business/Business.ServiceProducts/Logic/SubCategoriesLogic.cs" relfile="Business/Business.ServiceProducts/Logic/SubCategoriesLogic.cs" line="116" column="1" />
+      <Breakpoint file="/Users/christiancamilocastroguzman/Documents/Proyectos/Git/productmanagerservices/Services/Services.ProductsApi/Controllers/CategoriesController.cs" relfile="Services/Services.ProductsApi/Controllers/CategoriesController.cs" line="97" column="1" />
+      <Breakpoint file="/Users/christiancamilocastroguzman/Documents/Proyectos/Git/productmanagerservices/Repository/DataAccess.MongoDB/Lookup/ProductsLookup.cs" relfile="Repository/DataAccess.MongoDB/Lookup/ProductsLookup.cs" line="15" column="1" />
+      <Breakpoint file="/Users/christiancamilocastroguzman/Documents/Proyectos/Git/productmanagerservices/Business/Business.ServiceProducts/Logic/CategoriesLogic.cs" relfile="Business/Business.ServiceProducts/Logic/CategoriesLogic.cs" line="70" column="1" />
+      <Breakpoint file="/Users/christiancamilocastroguzman/Documents/Proyectos/Git/productmanagerservices/Services/Services.ProductsApi/Controllers/SettingsController.cs" relfile="Services/Services.ProductsApi/Controllers/SettingsController.cs" line="47" column="1" />
+      <Breakpoint file="/Users/christiancamilocastroguzman/Documents/Proyectos/Git/productmanagerservices/Business/Business.ServiceProducts/Logic/SizesLogic.cs" relfile="Business/Business.ServiceProducts/Logic/SizesLogic.cs" line="47" column="1" />
+      <Breakpoint file="/Users/christiancamilocastroguzman/Documents/Proyectos/Git/productmanagerservices/Services/Services.ProductsApi/Controllers/SettingsController.cs" relfile="Services/Services.ProductsApi/Controllers/SettingsController.cs" line="63" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
 </Properties>
